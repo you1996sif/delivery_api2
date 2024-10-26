@@ -3,5 +3,3 @@ id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 access_state_model,state.model,model_state_model,base.group_user,1,1,1,1
 access_district_model,district.model,model_district_model,base.group_user,1,1,1,1
 access_prime_model,prime.model,model_prime_model,base.group_user,1,1,1,1
-access_stock_picking_tracking_history_user,stock.picking.tracking.history.user,model_stock_picking_tracking_history,base.group_user,1,1,1,0
-access_stock_picking_tracking_history_public,stock.picking.tracking.history.public,model_stock_picking_tracking_history,base.group_public,1,0,0,0
