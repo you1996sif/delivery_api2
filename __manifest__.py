@@ -13,15 +13,7 @@
       'views/district_view.xml', 
       'views/res_partner.xml', 
       'views/account_move.xml',
-    'views/templates.xml',
-      
   ],
-  'assets': {
-      'web.assets_frontend': [
-          '/delivery_api/static/src/css/tracking.css',
-      ],
-  },
-
   'installable': True,
   'application': False,
 # you need to install html2text run this please

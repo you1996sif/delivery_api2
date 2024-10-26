@@ -1,107 +1,24 @@
-<!-- views/templates.xml -->
-<?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <template id="tracking_template" name="Delivery Tracking">
-        <t t-call="website.layout">
-            <div class="container py-5">
-                <div class="row justify-content-center">
-                    <div class="col-lg-8">
-                        <!-- Tracking Header -->
-                        <div class="card mb-4">
-                            <div class="card-header bg-primary">
-                                <h3 class="text-white mb-0">تتبع الشحنة</h3>
-                                <div class="text-white-50">
-                                    رقم التتبع: <span t-field="picking.tracking_code"/>
-                                </div>
-                            </div>
-                            
-                            <!-- Current Status -->
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <h5>حالة الشحنة الحالية</h5>
-                                        <div class="alert alert-info">
-                                            <strong t-esc="delivery_status"/>
-                                        </div>
-                                        
-                                        <t t-if="postponed_reason">
-                                            <h5 class="mt-3">سبب التأجيل</h5>
-                                            <div class="alert alert-warning">
-                                                <span t-esc="postponed_reason"/>
-                                            </div>
-                                        </t>
-                                        
-                                        <t t-if="return_reason">
-                                            <h5 class="mt-3">سبب الإرجاع</h5>
-                                            <div class="alert alert-danger">
-                                                <span t-esc="return_reason"/>
-                                            </div>
-                                        </t>
-                                    </div>
-                                    
-                                    <div class="col-md-6">
-                                        <h5>تفاصيل الشحنة</h5>
-                                        <table class="table table-sm">
-                                            <tr>
-                                                <th>رقم الطلب:</th>
-                                                <td><span t-field="picking.origin"/></td>
-                                            </tr>
-                                            <tr>
-                                                <th>تاريخ الشحن:</th>
-                                                <td><span t-field="picking.scheduled_date"/></td>
-                                            </tr>
-                                            <tr>
-                                                <th>اسم العميل:</th>
-                                                <td><span t-field="picking.partner_id.name"/></td>
-                                            </tr>
-                                            <tr>
-                                                <th>العنوان:</th>
-                                                <td>
-                                                    <span t-field="picking.partner_id.street"/><br/>
-                                                    <span t-field="picking.partner_id.state_id"/>
-                                                </td>
-                                            </tr>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!-- Tracking Timeline -->
-                        <div class="card">
-                            <div class="card-header">
-                                <h5 class="mb-0">سجل التتبع</h5>
-                            </div>
-                            <div class="card-body">
-                                <div class="timeline">
-                                    <t t-foreach="tracking_history" t-as="history">
-                                        <div class="timeline-item">
-                                            <div class="timeline-marker"></div>
-                                            <div class="timeline-content">
-                                                <h6 class="timeline-date">
-                                                    <span t-field="history.create_date"/>
-                                                </h6>
-                                                <p>
-                                                    <strong t-field="history.status"/>
-                                                    <t t-if="history.reason">
-                                                        - <span t-field="history.reason"/>
-                                                    </t>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </t>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </t>
-    </template>
-
-    <template id="assets_frontend" inherit_id="website.assets_frontend" name="Tracking Assets">
-        <xpath expr="." position="inside">
-            <link rel="stylesheet" href="/delivery_api/static/src/css/tracking.css"/>
-        </xpath>
-    </template>
+    <data>
+<!--
+        <template id="listing">
+          <ul>
+            <li t-foreach="objects" t-as="object">
+              <a t-attf-href="#{ root }/objects/#{ object.id }">
+                <t t-esc="object.display_name"/>
+              </a>
+            </li>
+          </ul>
+        </template>
+        <template id="object">
+          <h1><t t-esc="object.display_name"/></h1>
+          <dl>
+            <t t-foreach="object._fields" t-as="field">
+              <dt><t t-esc="field"/></dt>
+              <dd><t t-esc="object[field]"/></dd>
+            </t>
+          </dl>
+        </template>
+-->
+    </data>
 </odoo>
