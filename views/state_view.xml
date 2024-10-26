@@ -1,0 +1,57 @@
+<odoo>
+    <data>
+        <record id="view_state_tree" model="ir.ui.view">
+            <field name="name">state.model.tree</field>
+            <field name="model">state.model</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="val"/>
+                    <field name="key"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_state_form" model="ir.ui.view">
+            <field name="name">state.model.form</field>
+            <field name="model">state.model</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="key"/>
+                            <field name="val"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_state_model" model="ir.actions.act_window">
+            <field name="name">States</field>
+            <field name="res_model">state.model</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <!-- Correct the parent menu ID or remove it if not needed -->
+
+
+
+        <menuitem id="menu_states_district_model" name="States and Districts" parent="stock.menu_stock_root" sequence="10"/>
+
+        <menuitem id="menu_state_model" name="State List" parent="menu_states_district_model" action="action_state_model" sequence="1"/>
+          <record id="view_country_state_tree_inherit" model="ir.ui.view">
+            <field name="name">res.country.state.tree.inherit</field>
+            <field name="model">res.country.state</field>
+            <field name="inherit_id" ref="base.view_country_state_tree"/>
+            <field name="arch" type="xml">
+                <xpath expr="//tree" position="inside">
+                    <field name="key"/>
+                </xpath>
+            </field>
+        </record>
+
+
+
+    
+    </data>
+</odoo>

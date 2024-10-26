@@ -1,0 +1,50 @@
+<odoo>
+    <data>
+        <!-- Inherit the stock.picking form view -->
+        <record id="view_picking_form_inherit_status" model="ir.ui.view">
+          <field name="name">stock.picking.form.inherit.status</field>
+          <field name="model">stock.picking</field>
+          <field name="inherit_id" ref="stock.view_picking_form"/>
+          <field name="arch" type="xml">
+              <xpath expr="//field[@name='origin']" position="after">
+                <field name="delivery_status" widget="badge" 
+                        decoration-info="delivery_status == 'pending'" 
+                        decoration-danger="delivery_status == 'return_to_sender' or delivery_status == 'move_onway' or delivery_status == 'toinstore'" 
+                        decoration-warning="delivery_status == 'resend' or delivery_status == 'retry_delivery'" 
+                        decoration-success="delivery_status == 'succdlv' or delivery_status == 'sucs_dlv' or delivery_status == 'delivered'" 
+                        invisible="context.get('default_picking_type_code') == 'incoming'"/>
+             
+              </xpath>
+              <xpath expr="//field[@name='delivery_status']" position="after">
+              
+               
+                    <field name="postponed_reason"  invisible="delivery_status != 'postponed'"/>
+
+                    <field name="return_reason"   invisible="delivery_status not in   ['return_to_sender', 'rtn_withagent', 'rtn_tostore']" />
+              </xpath>
+          </field>
+        </record>
+      
+
+        <!-- Inherit the stock.picking tree view -->
+        <record id="view_picking_tree_inherit" model="ir.ui.view">
+            <field name="name">stock.picking.tree.inherit.delivery.status</field>
+            <field name="model">stock.picking</field>
+            <field name="inherit_id" ref="stock.vpicktree"/>
+            <field name="arch" type="xml">
+                <xpath expr="//tree" position="inside">
+
+                    <field name="delivery_status" widget="badge" 
+                        decoration-info="delivery_status == 'pending'" 
+                        decoration-danger="delivery_status == 'return_to_sender' or delivery_status == 'move_onway' or delivery_status == 'toinstore'" 
+                        decoration-warning="delivery_status == 'resend' or delivery_status == 'retry_delivery'" 
+                        decoration-success="delivery_status == 'succdlv' or delivery_status == 'sucs_dlv' or delivery_status == 'delivered'" 
+                        invisible="context.get('default_picking_type_code') == 'incoming'"/>
+                </xpath>
+            </field>
+        </record>
+     
+
+        
+    </data>
+</odoo>

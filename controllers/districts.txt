@@ -1,0 +1,3712 @@
+
+districts=[
+  
+    {
+        "districtId": 517,
+        "districtName": "ناحية عون"
+    },
+    {
+        "districtId": 518,
+        "districtName": " الحر"
+    },
+    {
+        "districtId": 519,
+        "districtName": "ناحية الحسينية"
+    },
+    {
+        "districtId": 520,
+        "districtName": "عين التمر"
+    },
+    {
+        "districtId": 521,
+        "districtName": "ناحية الرحالية"
+    },
+    {
+        "districtId": 522,
+        "districtName": "طويريج"
+    },
+    {
+        "districtId": 523,
+        "districtName": "الجدول الغربي"
+    },
+    {
+        "districtId": 524,
+        "districtName": "ناحية الخيرات"
+    },
+    {
+        "districtId": 627,
+        "districtName": "حي القادسية"
+    },
+    {
+        "districtId": 1306,
+        "districtName": "حي العامل"
+    },
+    {
+        "districtId": 1307,
+        "districtName": "حي النواب"
+    },
+    {
+        "districtId": 1308,
+        "districtName": "حي الموظفين"
+    },
+    {
+        "districtId": 1309,
+        "districtName": "حي الغدير"
+    },
+    {
+        "districtId": 1310,
+        "districtName": "حي الاسرة"
+    },
+    {
+        "districtId": 1311,
+        "districtName": "حي الحسين"
+    },
+    {
+        "districtId": 1312,
+        "districtName": "حي العباس"
+    },
+    {
+        "districtId": 1313,
+        "districtName": "حي سيف سعد"
+    },
+    {
+        "districtId": 1314,
+        "districtName": "حي الامين"
+    },
+    {
+        "districtId": 1315,
+        "districtName": "شارع ميثم التمار"
+    },
+    {
+        "districtId": 1316,
+        "districtName": "حي النقيب"
+    },
+    {
+        "districtId": 1317,
+        "districtName": "حي البلدية"
+    },
+    {
+        "districtId": 1318,
+        "districtName": "حي العسكري"
+    },
+    {
+        "districtId": 1319,
+        "districtName": "حي الامن الداخلي"
+    },
+    {
+        "districtId": 1320,
+        "districtName": "حي السلام"
+    },
+    {
+        "districtId": 1321,
+        "districtName": "حي النصر"
+    },
+    {
+        "districtId": 1322,
+        "districtName": "حي الوفاء"
+    },
+    {
+        "districtId": 1323,
+        "districtName": "حي المجتبى"
+    },
+    {
+        "districtId": 1324,
+        "districtName": "حي الاسكان"
+    },
+    {
+        "districtId": 1325,
+        "districtName": "حي الزهراء"
+    },
+    {
+        "districtId": 1326,
+        "districtName": "حي الحافظ"
+    },
+    {
+        "districtId": 1327,
+        "districtName": "حي الجابر"
+    },
+    {
+        "districtId": 1328,
+        "districtName": "حي الزبيلية"
+    },
+    {
+        "districtId": 1329,
+        "districtName": "شارع ابو طالب"
+    },
+    {
+        "districtId": 1330,
+        "districtName": "حي الرسالة"
+    },
+    {
+        "districtId": 1331,
+        "districtName": "حي الملحق"
+    },
+    {
+        "districtId": 1332,
+        "districtName": "حي التعاون"
+    },
+    {
+        "districtId": 1333,
+        "districtName": "حي الجاهز"
+    },
+    {
+        "districtId": 1334,
+        "districtName": "حي البعث"
+    },
+    {
+        "districtId": 1335,
+        "districtName": "حي التحدي"
+    },
+    {
+        "districtId": 1336,
+        "districtName": "حي المعلجي"
+    },
+    {
+        "districtId": 1337,
+        "districtName": "البوبيات"
+    },
+    {
+        "districtId": 1338,
+        "districtName": "شارع احمد الوائلي"
+    },
+    {
+        "districtId": 1339,
+        "districtName": "حي المحمدية"
+    },
+    {
+        "districtId": 1340,
+        "districtName": "حي الاطباء"
+    },
+    {
+        "districtId": 1341,
+        "districtName": "حي المعلمين"
+    },
+    {
+        "districtId": 1342,
+        "districtName": "حي الفارس"
+    },
+    {
+        "districtId": 1343,
+        "districtName": "كنطرة السلام"
+    },
+    {
+        "districtId": 1344,
+        "districtName": "باب طويريج"
+    },
+    {
+        "districtId": 1345,
+        "districtName": "سيطرة الابراهيمية"
+    },
+    {
+        "districtId": 1346,
+        "districtName": "العامرية"
+    },
+    {
+        "districtId": 1347,
+        "districtName": "السياحي"
+    },
+    {
+        "districtId": 1348,
+        "districtName": "المعهد التقني"
+    },
+    {
+        "districtId": 1349,
+        "districtName": "نهر السلام"
+    },
+    {
+        "districtId": 1350,
+        "districtName": "شط الله"
+    },
+    {
+        "districtId": 1351,
+        "districtName": "العيوج صدور وبزايز"
+    },
+    {
+        "districtId": 1352,
+        "districtName": "الرجيبة"
+    },
+    {
+        "districtId": 1353,
+        "districtName": "حي العباس / الرجيبة"
+    },
+    {
+        "districtId": 1354,
+        "districtName": "حي العسكري / الرجيبة"
+    },
+    {
+        "districtId": 1355,
+        "districtName": "الشاطي"
+    },
+    {
+        "districtId": 1357,
+        "districtName": "الكويل"
+    },
+    {
+        "districtId": 1358,
+        "districtName": "شط ملة"
+    },
+    {
+        "districtId": 1359,
+        "districtName": "ال عبد الله"
+    },
+    {
+        "districtId": 1360,
+        "districtName": "ال مجلي"
+    },
+    {
+        "districtId": 1361,
+        "districtName": "الفيادة"
+    },
+    {
+        "districtId": 1362,
+        "districtName": "الكريط"
+    },
+    {
+        "districtId": 1363,
+        "districtName": "ابو عويجيلة"
+    },
+    {
+        "districtId": 1364,
+        "districtName": "ابو رواية"
+    },
+    {
+        "districtId": 1366,
+        "districtName": "حي الجمعية"
+    },
+    {
+        "districtId": 1367,
+        "districtName": "حي المثنى"
+    },
+    {
+        "districtId": 1368,
+        "districtName": "حي ابو جوعانة"
+    },
+    {
+        "districtId": 1369,
+        "districtName": "حي الضباط"
+    },
+    {
+        "districtId": 1370,
+        "districtName": "حي ام الهوى"
+    },
+    {
+        "districtId": 1371,
+        "districtName": "حي الشهداء"
+    },
+    {
+        "districtId": 1372,
+        "districtName": "حي الحسين / طويريج"
+    },
+    {
+        "districtId": 1373,
+        "districtName": "شارع الحولي / طويريج"
+    },
+    {
+        "districtId": 1374,
+        "districtName": "الطبر"
+    },
+    {
+        "districtId": 1375,
+        "districtName": "الرشيدة"
+    },
+    {
+        "districtId": 1376,
+        "districtName": "جناجه"
+    },
+    {
+        "districtId": 1377,
+        "districtName": "حي الرياض"
+    },
+    {
+        "districtId": 1378,
+        "districtName": "حي الشبذين"
+    },
+    {
+        "districtId": 1379,
+        "districtName": "حي الزهراء / طويريج"
+    },
+    {
+        "districtId": 1380,
+        "districtName": "حي ابليبيج"
+    },
+    {
+        "districtId": 1381,
+        "districtName": "شارع الربط"
+    },
+    {
+        "districtId": 1643,
+        "districtName": "قرب الامام"
+    },
+    {
+        "districtId": 1672,
+        "districtName": "حي الولاء"
+    },
+    {
+        "districtId": 2704,
+        "districtName": "عامود 685"
+    },
+    {
+        "districtId": 2705,
+        "districtName": "عامود 686"
+    },
+    {
+        "districtId": 2706,
+        "districtName": "عامود 687"
+    },
+    {
+        "districtId": 2707,
+        "districtName": "عامود 688"
+    },
+    {
+        "districtId": 2708,
+        "districtName": "عامود 689"
+    },
+    {
+        "districtId": 2709,
+        "districtName": "عامود 690"
+    },
+    {
+        "districtId": 2710,
+        "districtName": "عامود 691"
+    },
+    {
+        "districtId": 2711,
+        "districtName": "عامود 692"
+    },
+    {
+        "districtId": 2712,
+        "districtName": "عامود 693"
+    },
+    {
+        "districtId": 2713,
+        "districtName": "عامود 694"
+    },
+    {
+        "districtId": 2714,
+        "districtName": "عامود 695"
+    },
+    {
+        "districtId": 2715,
+        "districtName": "عامود 696"
+    },
+    {
+        "districtId": 2716,
+        "districtName": "عامود 697"
+    },
+    {
+        "districtId": 2717,
+        "districtName": "عامود 698"
+    },
+    {
+        "districtId": 2718,
+        "districtName": "عامود 699"
+    },
+    {
+        "districtId": 2719,
+        "districtName": "عامود 700"
+    },
+    {
+        "districtId": 2720,
+        "districtName": "عامود 701"
+    },
+    {
+        "districtId": 2721,
+        "districtName": "عامود 702"
+    },
+    {
+        "districtId": 2722,
+        "districtName": "عامود 703"
+    },
+    {
+        "districtId": 2723,
+        "districtName": "عامود 704"
+    },
+    {
+        "districtId": 2724,
+        "districtName": "عامود 705"
+    },
+    {
+        "districtId": 2725,
+        "districtName": "عامود 706"
+    },
+    {
+        "districtId": 2726,
+        "districtName": "عامود 707"
+    },
+    {
+        "districtId": 2727,
+        "districtName": "عامود 708"
+    },
+    {
+        "districtId": 2728,
+        "districtName": "عامود 709"
+    },
+    {
+        "districtId": 2729,
+        "districtName": "عامود 710"
+    },
+    {
+        "districtId": 2730,
+        "districtName": "عامود 711"
+    },
+    {
+        "districtId": 2731,
+        "districtName": "عامود 712"
+    },
+    {
+        "districtId": 2732,
+        "districtName": "عامود 713"
+    },
+    {
+        "districtId": 2733,
+        "districtName": "عامود 714"
+    },
+    {
+        "districtId": 2734,
+        "districtName": "عامود 715"
+    },
+    {
+        "districtId": 2735,
+        "districtName": "عامود 716"
+    },
+    {
+        "districtId": 2736,
+        "districtName": "عامود 717"
+    },
+    {
+        "districtId": 2737,
+        "districtName": "عامود 718"
+    },
+    {
+        "districtId": 2738,
+        "districtName": "عامود 719"
+    },
+    {
+        "districtId": 2739,
+        "districtName": "عامود 720"
+    },
+    {
+        "districtId": 2740,
+        "districtName": "عامود 721"
+    },
+    {
+        "districtId": 2741,
+        "districtName": "عامود 722"
+    },
+    {
+        "districtId": 2742,
+        "districtName": "عامود 723"
+    },
+    {
+        "districtId": 2743,
+        "districtName": "عامود 724"
+    },
+    {
+        "districtId": 2744,
+        "districtName": "عامود 725"
+    },
+    {
+        "districtId": 2745,
+        "districtName": "عامود 726"
+    },
+    {
+        "districtId": 2746,
+        "districtName": "عامود 727"
+    },
+    {
+        "districtId": 2747,
+        "districtName": "عامود 728"
+    },
+    {
+        "districtId": 2748,
+        "districtName": "عامود 729"
+    },
+    {
+        "districtId": 2749,
+        "districtName": "عامود 730"
+    },
+    {
+        "districtId": 2750,
+        "districtName": "عامود 731"
+    },
+    {
+        "districtId": 2751,
+        "districtName": "عامود 732"
+    },
+    {
+        "districtId": 2752,
+        "districtName": "عامود 733"
+    },
+    {
+        "districtId": 2753,
+        "districtName": "عامود 734"
+    },
+    {
+        "districtId": 2754,
+        "districtName": "عامود 735"
+    },
+    {
+        "districtId": 2755,
+        "districtName": "عامود 736"
+    },
+    {
+        "districtId": 2756,
+        "districtName": "عامود 737"
+    },
+    {
+        "districtId": 2757,
+        "districtName": "عامود 738"
+    },
+    {
+        "districtId": 2758,
+        "districtName": "عامود 739"
+    },
+    {
+        "districtId": 2759,
+        "districtName": "عامود 740"
+    },
+    {
+        "districtId": 2760,
+        "districtName": "عامود 741"
+    },
+    {
+        "districtId": 2761,
+        "districtName": "عامود 742"
+    },
+    {
+        "districtId": 2762,
+        "districtName": "عامود 743"
+    },
+    {
+        "districtId": 2763,
+        "districtName": "عامود 744"
+    },
+    {
+        "districtId": 2764,
+        "districtName": "عامود 745"
+    },
+    {
+        "districtId": 2765,
+        "districtName": "عامود 746"
+    },
+    {
+        "districtId": 2766,
+        "districtName": "عامود 747"
+    },
+    {
+        "districtId": 2767,
+        "districtName": "عامود 748"
+    },
+    {
+        "districtId": 2768,
+        "districtName": "عامود 749"
+    },
+    {
+        "districtId": 2769,
+        "districtName": "عامود 750"
+    },
+    {
+        "districtId": 2770,
+        "districtName": "عامود 751"
+    },
+    {
+        "districtId": 2771,
+        "districtName": "عامود 752"
+    },
+    {
+        "districtId": 2772,
+        "districtName": "عامود 753"
+    },
+    {
+        "districtId": 2773,
+        "districtName": "عامود 754"
+    },
+    {
+        "districtId": 2774,
+        "districtName": "عامود 755"
+    },
+    {
+        "districtId": 2775,
+        "districtName": "عامود 756"
+    },
+    {
+        "districtId": 2776,
+        "districtName": "عامود 757"
+    },
+    {
+        "districtId": 2777,
+        "districtName": "عامود 758"
+    },
+    {
+        "districtId": 2778,
+        "districtName": "عامود 759"
+    },
+    {
+        "districtId": 2779,
+        "districtName": "عامود 760"
+    },
+    {
+        "districtId": 2780,
+        "districtName": "عامود 761"
+    },
+    {
+        "districtId": 2781,
+        "districtName": "عامود 762"
+    },
+    {
+        "districtId": 2782,
+        "districtName": "عامود 763"
+    },
+    {
+        "districtId": 2783,
+        "districtName": "عامود 764"
+    },
+    {
+        "districtId": 2784,
+        "districtName": "عامود 765"
+    },
+    {
+        "districtId": 2785,
+        "districtName": "عامود 766"
+    },
+    {
+        "districtId": 2786,
+        "districtName": "عامود 767"
+    },
+    {
+        "districtId": 2787,
+        "districtName": "عامود 768"
+    },
+    {
+        "districtId": 2788,
+        "districtName": "عامود 769"
+    },
+    {
+        "districtId": 2789,
+        "districtName": "عامود 770"
+    },
+    {
+        "districtId": 2790,
+        "districtName": "عامود 771"
+    },
+    {
+        "districtId": 2791,
+        "districtName": "عامود 772"
+    },
+    {
+        "districtId": 2792,
+        "districtName": "عامود 773"
+    },
+    {
+        "districtId": 2793,
+        "districtName": "عامود 774"
+    },
+    {
+        "districtId": 2794,
+        "districtName": "عامود 775"
+    },
+    {
+        "districtId": 2795,
+        "districtName": "عامود 776"
+    },
+    {
+        "districtId": 2796,
+        "districtName": "عامود 777"
+    },
+    {
+        "districtId": 2797,
+        "districtName": "عامود 778"
+    },
+    {
+        "districtId": 2798,
+        "districtName": "عامود 779"
+    },
+    {
+        "districtId": 2799,
+        "districtName": "عامود 780"
+    },
+    {
+        "districtId": 2800,
+        "districtName": "عامود 781"
+    },
+    {
+        "districtId": 2801,
+        "districtName": "عامود 782"
+    },
+    {
+        "districtId": 2802,
+        "districtName": "عامود 783"
+    },
+    {
+        "districtId": 2803,
+        "districtName": "عامود 784"
+    },
+    {
+        "districtId": 2804,
+        "districtName": "عامود 785"
+    },
+    {
+        "districtId": 2805,
+        "districtName": "عامود 786"
+    },
+    {
+        "districtId": 2806,
+        "districtName": "عامود 787"
+    },
+    {
+        "districtId": 2807,
+        "districtName": "عامود 788"
+    },
+    {
+        "districtId": 2808,
+        "districtName": "عامود 789"
+    },
+    {
+        "districtId": 2809,
+        "districtName": "عامود 790"
+    },
+    {
+        "districtId": 2810,
+        "districtName": "عامود 791"
+    },
+    {
+        "districtId": 2811,
+        "districtName": "عامود 792"
+    },
+    {
+        "districtId": 2812,
+        "districtName": "عامود 793"
+    },
+    {
+        "districtId": 2813,
+        "districtName": "عامود 794"
+    },
+    {
+        "districtId": 2814,
+        "districtName": "عامود 795"
+    },
+    {
+        "districtId": 2815,
+        "districtName": "عامود 796"
+    },
+    {
+        "districtId": 2816,
+        "districtName": "عامود 797"
+    },
+    {
+        "districtId": 2817,
+        "districtName": "عامود 798"
+    },
+    {
+        "districtId": 2818,
+        "districtName": "عامود 799"
+    },
+    {
+        "districtId": 2819,
+        "districtName": "عامود 800"
+    },
+    {
+        "districtId": 2820,
+        "districtName": "عامود 801"
+    },
+    {
+        "districtId": 2821,
+        "districtName": "عامود 802"
+    },
+    {
+        "districtId": 2822,
+        "districtName": "عامود 803"
+    },
+    {
+        "districtId": 2823,
+        "districtName": "عامود 804"
+    },
+    {
+        "districtId": 2824,
+        "districtName": "عامود 805"
+    },
+    {
+        "districtId": 2825,
+        "districtName": "عامود 806"
+    },
+    {
+        "districtId": 2826,
+        "districtName": "عامود 807"
+    },
+    {
+        "districtId": 2827,
+        "districtName": "عامود 808"
+    },
+    {
+        "districtId": 2828,
+        "districtName": "عامود 809"
+    },
+    {
+        "districtId": 2829,
+        "districtName": "عامود 810"
+    },
+    {
+        "districtId": 2830,
+        "districtName": "عامود 811"
+    },
+    {
+        "districtId": 2831,
+        "districtName": "عامود 812"
+    },
+    {
+        "districtId": 2832,
+        "districtName": "عامود 813"
+    },
+    {
+        "districtId": 2833,
+        "districtName": "عامود 814"
+    },
+    {
+        "districtId": 2834,
+        "districtName": "عامود 815"
+    },
+    {
+        "districtId": 2835,
+        "districtName": "عامود 816"
+    },
+    {
+        "districtId": 2836,
+        "districtName": "عامود 817"
+    },
+    {
+        "districtId": 2837,
+        "districtName": "عامود 818"
+    },
+    {
+        "districtId": 2838,
+        "districtName": "عامود 819"
+    },
+    {
+        "districtId": 2839,
+        "districtName": "عامود 820"
+    },
+    {
+        "districtId": 2840,
+        "districtName": "عامود 821"
+    },
+    {
+        "districtId": 2841,
+        "districtName": "عامود 822"
+    },
+    {
+        "districtId": 2842,
+        "districtName": "عامود 823"
+    },
+    {
+        "districtId": 2843,
+        "districtName": "عامود 824"
+    },
+    {
+        "districtId": 2844,
+        "districtName": "عامود 825"
+    },
+    {
+        "districtId": 2845,
+        "districtName": "عامود 826"
+    },
+    {
+        "districtId": 2846,
+        "districtName": "عامود 827"
+    },
+    {
+        "districtId": 2847,
+        "districtName": "عامود 828"
+    },
+    {
+        "districtId": 2848,
+        "districtName": "عامود 829"
+    },
+    {
+        "districtId": 2849,
+        "districtName": "عامود 830"
+    },
+    {
+        "districtId": 2850,
+        "districtName": "عامود 831"
+    },
+    {
+        "districtId": 2851,
+        "districtName": "عامود 832"
+    },
+    {
+        "districtId": 2852,
+        "districtName": "عامود 833"
+    },
+    {
+        "districtId": 2853,
+        "districtName": "عامود 834"
+    },
+    {
+        "districtId": 2854,
+        "districtName": "عامود 835"
+    },
+    {
+        "districtId": 2855,
+        "districtName": "عامود 836"
+    },
+    {
+        "districtId": 2856,
+        "districtName": "عامود 837"
+    },
+    {
+        "districtId": 2857,
+        "districtName": "عامود 838"
+    },
+    {
+        "districtId": 2858,
+        "districtName": "عامود 839"
+    },
+    {
+        "districtId": 2859,
+        "districtName": "عامود 840"
+    },
+    {
+        "districtId": 2860,
+        "districtName": "عامود 841"
+    },
+    {
+        "districtId": 2861,
+        "districtName": "عامود 842"
+    },
+    {
+        "districtId": 2862,
+        "districtName": "عامود 843"
+    },
+    {
+        "districtId": 2863,
+        "districtName": "عامود 844"
+    },
+    {
+        "districtId": 2864,
+        "districtName": "عامود 845"
+    },
+    {
+        "districtId": 2865,
+        "districtName": "عامود 846"
+    },
+    {
+        "districtId": 2866,
+        "districtName": "عامود 847"
+    },
+    {
+        "districtId": 2867,
+        "districtName": "عامود 848"
+    },
+    {
+        "districtId": 2868,
+        "districtName": "عامود 849"
+    },
+    {
+        "districtId": 2869,
+        "districtName": "عامود 850"
+    },
+    {
+        "districtId": 2870,
+        "districtName": "عامود 851"
+    },
+    {
+        "districtId": 2871,
+        "districtName": "عامود 852"
+    },
+    {
+        "districtId": 2872,
+        "districtName": "عامود 853"
+    },
+    {
+        "districtId": 2873,
+        "districtName": "عامود 854"
+    },
+    {
+        "districtId": 2874,
+        "districtName": "عامود 855"
+    },
+    {
+        "districtId": 2875,
+        "districtName": "عامود 856"
+    },
+    {
+        "districtId": 2876,
+        "districtName": "عامود 857"
+    },
+    {
+        "districtId": 2877,
+        "districtName": "عامود 858"
+    },
+    {
+        "districtId": 2878,
+        "districtName": "عامود 859"
+    },
+    {
+        "districtId": 2879,
+        "districtName": "عامود 860"
+    },
+    {
+        "districtId": 2880,
+        "districtName": "عامود 861"
+    },
+    {
+        "districtId": 2881,
+        "districtName": "عامود 862"
+    },
+    {
+        "districtId": 2882,
+        "districtName": "عامود 863"
+    },
+    {
+        "districtId": 2883,
+        "districtName": "عامود 864"
+    },
+    {
+        "districtId": 2884,
+        "districtName": "عامود 865"
+    },
+    {
+        "districtId": 2885,
+        "districtName": "عامود 866"
+    },
+    {
+        "districtId": 2886,
+        "districtName": "عامود 867"
+    },
+    {
+        "districtId": 2887,
+        "districtName": "عامود 868"
+    },
+    {
+        "districtId": 2888,
+        "districtName": "عامود 869"
+    },
+    {
+        "districtId": 2889,
+        "districtName": "عامود 870"
+    },
+    {
+        "districtId": 2890,
+        "districtName": "عامود 871"
+    },
+    {
+        "districtId": 2891,
+        "districtName": "عامود 872"
+    },
+    {
+        "districtId": 2892,
+        "districtName": "عامود 873"
+    },
+    {
+        "districtId": 2893,
+        "districtName": "عامود 874"
+    },
+    {
+        "districtId": 2894,
+        "districtName": "عامود 875"
+    },
+    {
+        "districtId": 2895,
+        "districtName": "عامود 876"
+    },
+    {
+        "districtId": 2896,
+        "districtName": "عامود 877"
+    },
+    {
+        "districtId": 2897,
+        "districtName": "عامود 878"
+    },
+    {
+        "districtId": 2898,
+        "districtName": "عامود 879"
+    },
+    {
+        "districtId": 2899,
+        "districtName": "عامود 880"
+    },
+    {
+        "districtId": 2900,
+        "districtName": "عامود 881"
+    },
+    {
+        "districtId": 2901,
+        "districtName": "عامود 882"
+    },
+    {
+        "districtId": 2902,
+        "districtName": "عامود 883"
+    },
+    {
+        "districtId": 2903,
+        "districtName": "عامود 884"
+    },
+    {
+        "districtId": 2904,
+        "districtName": "عامود 885"
+    },
+    {
+        "districtId": 2905,
+        "districtName": "عامود 886"
+    },
+    {
+        "districtId": 2906,
+        "districtName": "عامود 887"
+    },
+    {
+        "districtId": 2907,
+        "districtName": "عامود 888"
+    },
+    {
+        "districtId": 2908,
+        "districtName": "عامود 889"
+    },
+    {
+        "districtId": 2909,
+        "districtName": "عامود 890"
+    },
+    {
+        "districtId": 2910,
+        "districtName": "عامود 891"
+    },
+    {
+        "districtId": 2911,
+        "districtName": "عامود 892"
+    },
+    {
+        "districtId": 2912,
+        "districtName": "عامود 893"
+    },
+    {
+        "districtId": 2913,
+        "districtName": "عامود 894"
+    },
+    {
+        "districtId": 2914,
+        "districtName": "عامود 895"
+    },
+    {
+        "districtId": 2915,
+        "districtName": "عامود 896"
+    },
+    {
+        "districtId": 2916,
+        "districtName": "عامود 897"
+    },
+    {
+        "districtId": 2917,
+        "districtName": "عامود 898"
+    },
+    {
+        "districtId": 2918,
+        "districtName": "عامود 899"
+    },
+    {
+        "districtId": 2919,
+        "districtName": "عامود 900"
+    },
+    {
+        "districtId": 2920,
+        "districtName": "عامود 901"
+    },
+    {
+        "districtId": 2921,
+        "districtName": "عامود 902"
+    },
+    {
+        "districtId": 2922,
+        "districtName": "عامود 903"
+    },
+    {
+        "districtId": 2923,
+        "districtName": "عامود 904"
+    },
+    {
+        "districtId": 2924,
+        "districtName": "عامود 905"
+    },
+    {
+        "districtId": 2925,
+        "districtName": "عامود 906"
+    },
+    {
+        "districtId": 2926,
+        "districtName": "عامود 907"
+    },
+    {
+        "districtId": 2927,
+        "districtName": "عامود 908"
+    },
+    {
+        "districtId": 2928,
+        "districtName": "عامود 909"
+    },
+    {
+        "districtId": 2929,
+        "districtName": "عامود 910"
+    },
+    {
+        "districtId": 2930,
+        "districtName": "عامود 911"
+    },
+    {
+        "districtId": 2931,
+        "districtName": "عامود 912"
+    },
+    {
+        "districtId": 2932,
+        "districtName": "عامود 913"
+    },
+    {
+        "districtId": 2933,
+        "districtName": "عامود 914"
+    },
+    {
+        "districtId": 2934,
+        "districtName": "عامود 915"
+    },
+    {
+        "districtId": 2935,
+        "districtName": "عامود 916"
+    },
+    {
+        "districtId": 2936,
+        "districtName": "عامود 917"
+    },
+    {
+        "districtId": 2937,
+        "districtName": "عامود 918"
+    },
+    {
+        "districtId": 2938,
+        "districtName": "عامود 919"
+    },
+    {
+        "districtId": 2939,
+        "districtName": "عامود 920"
+    },
+    {
+        "districtId": 2940,
+        "districtName": "عامود 921"
+    },
+    {
+        "districtId": 2941,
+        "districtName": "عامود 922"
+    },
+    {
+        "districtId": 2942,
+        "districtName": "عامود 923"
+    },
+    {
+        "districtId": 2943,
+        "districtName": "عامود 924"
+    },
+    {
+        "districtId": 2944,
+        "districtName": "عامود 925"
+    },
+    {
+        "districtId": 2945,
+        "districtName": "عامود 926"
+    },
+    {
+        "districtId": 2946,
+        "districtName": "عامود 927"
+    },
+    {
+        "districtId": 2947,
+        "districtName": "عامود 928"
+    },
+    {
+        "districtId": 2948,
+        "districtName": "عامود 929"
+    },
+    {
+        "districtId": 2949,
+        "districtName": "عامود 930"
+    },
+    {
+        "districtId": 2950,
+        "districtName": "عامود 931"
+    },
+    {
+        "districtId": 2951,
+        "districtName": "عامود 932"
+    },
+    {
+        "districtId": 2952,
+        "districtName": "عامود 933"
+    },
+    {
+        "districtId": 2953,
+        "districtName": "عامود 934"
+    },
+    {
+        "districtId": 2954,
+        "districtName": "عامود 935"
+    },
+    {
+        "districtId": 2955,
+        "districtName": "عامود 936"
+    },
+    {
+        "districtId": 2956,
+        "districtName": "عامود 937"
+    },
+    {
+        "districtId": 2957,
+        "districtName": "عامود 938"
+    },
+    {
+        "districtId": 2958,
+        "districtName": "عامود 939"
+    },
+    {
+        "districtId": 2959,
+        "districtName": "عامود 940"
+    },
+    {
+        "districtId": 2960,
+        "districtName": "عامود 941"
+    },
+    {
+        "districtId": 2961,
+        "districtName": "عامود 942"
+    },
+    {
+        "districtId": 2962,
+        "districtName": "عامود 943"
+    },
+    {
+        "districtId": 2963,
+        "districtName": "عامود 944"
+    },
+    {
+        "districtId": 2964,
+        "districtName": "عامود 945"
+    },
+    {
+        "districtId": 2965,
+        "districtName": "عامود 946"
+    },
+    {
+        "districtId": 2966,
+        "districtName": "عامود 947"
+    },
+    {
+        "districtId": 2967,
+        "districtName": "عامود 948"
+    },
+    {
+        "districtId": 2968,
+        "districtName": "عامود 949"
+    },
+    {
+        "districtId": 2969,
+        "districtName": "عامود 950"
+    },
+    {
+        "districtId": 2970,
+        "districtName": "عامود 951"
+    },
+    {
+        "districtId": 2971,
+        "districtName": "عامود 952"
+    },
+    {
+        "districtId": 2972,
+        "districtName": "عامود 953"
+    },
+    {
+        "districtId": 2973,
+        "districtName": "عامود 954"
+    },
+    {
+        "districtId": 2974,
+        "districtName": "عامود 955"
+    },
+    {
+        "districtId": 2975,
+        "districtName": "عامود 956"
+    },
+    {
+        "districtId": 2976,
+        "districtName": "عامود 957"
+    },
+    {
+        "districtId": 2977,
+        "districtName": "عامود 958"
+    },
+    {
+        "districtId": 2978,
+        "districtName": "عامود 959"
+    },
+    {
+        "districtId": 2979,
+        "districtName": "عامود 960"
+    },
+    {
+        "districtId": 2980,
+        "districtName": "عامود 961"
+    },
+    {
+        "districtId": 2981,
+        "districtName": "عامود 962"
+    },
+    {
+        "districtId": 2982,
+        "districtName": "عامود 963"
+    },
+    {
+        "districtId": 2983,
+        "districtName": "عامود 964"
+    },
+    {
+        "districtId": 2984,
+        "districtName": "عامود 965"
+    },
+    {
+        "districtId": 2985,
+        "districtName": "عامود 966"
+    },
+    {
+        "districtId": 2986,
+        "districtName": "عامود 967"
+    },
+    {
+        "districtId": 2987,
+        "districtName": "عامود 968"
+    },
+    {
+        "districtId": 2988,
+        "districtName": "عامود 969"
+    },
+    {
+        "districtId": 2989,
+        "districtName": "عامود 970"
+    },
+    {
+        "districtId": 2990,
+        "districtName": "عامود 971"
+    },
+    {
+        "districtId": 2991,
+        "districtName": "عامود 972"
+    },
+    {
+        "districtId": 2992,
+        "districtName": "عامود 973"
+    },
+    {
+        "districtId": 2993,
+        "districtName": "عامود 974"
+    },
+    {
+        "districtId": 2994,
+        "districtName": "عامود 975"
+    },
+    {
+        "districtId": 2995,
+        "districtName": "عامود 976"
+    },
+    {
+        "districtId": 2996,
+        "districtName": "عامود 977"
+    },
+    {
+        "districtId": 2997,
+        "districtName": "عامود 978"
+    },
+    {
+        "districtId": 2998,
+        "districtName": "عامود 979"
+    },
+    {
+        "districtId": 2999,
+        "districtName": "عامود 980"
+    },
+    {
+        "districtId": 3000,
+        "districtName": "عامود 981"
+    },
+    {
+        "districtId": 3001,
+        "districtName": "عامود 982"
+    },
+    {
+        "districtId": 3002,
+        "districtName": "عامود 983"
+    },
+    {
+        "districtId": 3003,
+        "districtName": "عامود 984"
+    },
+    {
+        "districtId": 3004,
+        "districtName": "عامود 985"
+    },
+    {
+        "districtId": 3005,
+        "districtName": "عامود 986"
+    },
+    {
+        "districtId": 3006,
+        "districtName": "عامود 987"
+    },
+    {
+        "districtId": 3007,
+        "districtName": "عامود 988"
+    },
+    {
+        "districtId": 3008,
+        "districtName": "عامود 989"
+    },
+    {
+        "districtId": 3009,
+        "districtName": "عامود 990"
+    },
+    {
+        "districtId": 3010,
+        "districtName": "عامود 991"
+    },
+    {
+        "districtId": 3011,
+        "districtName": "عامود 992"
+    },
+    {
+        "districtId": 3012,
+        "districtName": "عامود 993"
+    },
+    {
+        "districtId": 3013,
+        "districtName": "عامود 994"
+    },
+    {
+        "districtId": 3014,
+        "districtName": "عامود 995"
+    },
+    {
+        "districtId": 3015,
+        "districtName": "عامود 996"
+    },
+    {
+        "districtId": 3016,
+        "districtName": "عامود 997"
+    },
+    {
+        "districtId": 3017,
+        "districtName": "عامود 998"
+    },
+    {
+        "districtId": 3018,
+        "districtName": "عامود 999"
+    },
+    {
+        "districtId": 3019,
+        "districtName": "عامود 1000"
+    },
+    {
+        "districtId": 3020,
+        "districtName": "عامود 1001"
+    },
+    {
+        "districtId": 3021,
+        "districtName": "عامود 1002"
+    },
+    {
+        "districtId": 3022,
+        "districtName": "عامود 1003"
+    },
+    {
+        "districtId": 3023,
+        "districtName": "عامود 1004"
+    },
+    {
+        "districtId": 3024,
+        "districtName": "عامود 1005"
+    },
+    {
+        "districtId": 3025,
+        "districtName": "عامود 1006"
+    },
+    {
+        "districtId": 3026,
+        "districtName": "عامود 1007"
+    },
+    {
+        "districtId": 3027,
+        "districtName": "عامود 1008"
+    },
+    {
+        "districtId": 3028,
+        "districtName": "عامود 1009"
+    },
+    {
+        "districtId": 3029,
+        "districtName": "عامود 1010"
+    },
+    {
+        "districtId": 3030,
+        "districtName": "عامود 1011"
+    },
+    {
+        "districtId": 3031,
+        "districtName": "عامود 1012"
+    },
+    {
+        "districtId": 3032,
+        "districtName": "عامود 1013"
+    },
+    {
+        "districtId": 3033,
+        "districtName": "عامود 1014"
+    },
+    {
+        "districtId": 3034,
+        "districtName": "عامود 1015"
+    },
+    {
+        "districtId": 3035,
+        "districtName": "عامود 1016"
+    },
+    {
+        "districtId": 3036,
+        "districtName": "عامود 1017"
+    },
+    {
+        "districtId": 3037,
+        "districtName": "عامود 1018"
+    },
+    {
+        "districtId": 3038,
+        "districtName": "عامود 1019"
+    },
+    {
+        "districtId": 3039,
+        "districtName": "عامود 1020"
+    },
+    {
+        "districtId": 3040,
+        "districtName": "عامود 1021"
+    },
+    {
+        "districtId": 3041,
+        "districtName": "عامود 1022"
+    },
+    {
+        "districtId": 3042,
+        "districtName": "عامود 1023"
+    },
+    {
+        "districtId": 3043,
+        "districtName": "عامود 1024"
+    },
+    {
+        "districtId": 3044,
+        "districtName": "عامود 1025"
+    },
+    {
+        "districtId": 3045,
+        "districtName": "عامود 1026"
+    },
+    {
+        "districtId": 3046,
+        "districtName": "عامود 1027"
+    },
+    {
+        "districtId": 3047,
+        "districtName": "عامود 1028"
+    },
+    {
+        "districtId": 3048,
+        "districtName": "عامود 1029"
+    },
+    {
+        "districtId": 3049,
+        "districtName": "عامود 1030"
+    },
+    {
+        "districtId": 3050,
+        "districtName": "عامود 1031"
+    },
+    {
+        "districtId": 3051,
+        "districtName": "عامود 1032"
+    },
+    {
+        "districtId": 3052,
+        "districtName": "عامود 1033"
+    },
+    {
+        "districtId": 3053,
+        "districtName": "عامود 1034"
+    },
+    {
+        "districtId": 3054,
+        "districtName": "عامود 1035"
+    },
+    {
+        "districtId": 3055,
+        "districtName": "عامود 1036"
+    },
+    {
+        "districtId": 3056,
+        "districtName": "عامود 1037"
+    },
+    {
+        "districtId": 3057,
+        "districtName": "عامود 1038"
+    },
+    {
+        "districtId": 3058,
+        "districtName": "عامود 1039"
+    },
+    {
+        "districtId": 3059,
+        "districtName": "عامود 1040"
+    },
+    {
+        "districtId": 3060,
+        "districtName": "عامود 1041"
+    },
+    {
+        "districtId": 3061,
+        "districtName": "عامود 1042"
+    },
+    {
+        "districtId": 3062,
+        "districtName": "عامود 1043"
+    },
+    {
+        "districtId": 3063,
+        "districtName": "عامود 1044"
+    },
+    {
+        "districtId": 3064,
+        "districtName": "عامود 1045"
+    },
+    {
+        "districtId": 3065,
+        "districtName": "عامود 1046"
+    },
+    {
+        "districtId": 3066,
+        "districtName": "عامود 1047"
+    },
+    {
+        "districtId": 3067,
+        "districtName": "عامود 1048"
+    },
+    {
+        "districtId": 3068,
+        "districtName": "عامود 1049"
+    },
+    {
+        "districtId": 3069,
+        "districtName": "عامود 1050"
+    },
+    {
+        "districtId": 3070,
+        "districtName": "عامود 1051"
+    },
+    {
+        "districtId": 3071,
+        "districtName": "عامود 1052"
+    },
+    {
+        "districtId": 3072,
+        "districtName": "عامود 1053"
+    },
+    {
+        "districtId": 3073,
+        "districtName": "عامود 1054"
+    },
+    {
+        "districtId": 3074,
+        "districtName": "عامود 1055"
+    },
+    {
+        "districtId": 3075,
+        "districtName": "عامود 1056"
+    },
+    {
+        "districtId": 3076,
+        "districtName": "عامود 1057"
+    },
+    {
+        "districtId": 3077,
+        "districtName": "عامود 1058"
+    },
+    {
+        "districtId": 3078,
+        "districtName": "عامود 1059"
+    },
+    {
+        "districtId": 3079,
+        "districtName": "عامود 1060"
+    },
+    {
+        "districtId": 3080,
+        "districtName": "عامود 1061"
+    },
+    {
+        "districtId": 3081,
+        "districtName": "عامود 1062"
+    },
+    {
+        "districtId": 3082,
+        "districtName": "عامود 1063"
+    },
+    {
+        "districtId": 3083,
+        "districtName": "عامود 1064"
+    },
+    {
+        "districtId": 3084,
+        "districtName": "عامود 1065"
+    },
+    {
+        "districtId": 3085,
+        "districtName": "عامود 1066"
+    },
+    {
+        "districtId": 3086,
+        "districtName": "عامود 1067"
+    },
+    {
+        "districtId": 3087,
+        "districtName": "عامود 1068"
+    },
+    {
+        "districtId": 3088,
+        "districtName": "عامود 1069"
+    },
+    {
+        "districtId": 3089,
+        "districtName": "عامود 1070"
+    },
+    {
+        "districtId": 3090,
+        "districtName": "عامود 1071"
+    },
+    {
+        "districtId": 3091,
+        "districtName": "عامود 1072"
+    },
+    {
+        "districtId": 3092,
+        "districtName": "عامود 1073"
+    },
+    {
+        "districtId": 3093,
+        "districtName": "عامود 1074"
+    },
+    {
+        "districtId": 3094,
+        "districtName": "عامود 1075"
+    },
+    {
+        "districtId": 3095,
+        "districtName": "عامود 1076"
+    },
+    {
+        "districtId": 3096,
+        "districtName": "عامود 1077"
+    },
+    {
+        "districtId": 3097,
+        "districtName": "عامود 1078"
+    },
+    {
+        "districtId": 3098,
+        "districtName": "عامود 1079"
+    },
+    {
+        "districtId": 3099,
+        "districtName": "عامود 1080"
+    },
+    {
+        "districtId": 3100,
+        "districtName": "عامود 1081"
+    },
+    {
+        "districtId": 3101,
+        "districtName": "عامود 1082"
+    },
+    {
+        "districtId": 3102,
+        "districtName": "عامود 1083"
+    },
+    {
+        "districtId": 3103,
+        "districtName": "عامود 1084"
+    },
+    {
+        "districtId": 3104,
+        "districtName": "عامود 1085"
+    },
+    {
+        "districtId": 3105,
+        "districtName": "عامود 1086"
+    },
+    {
+        "districtId": 3106,
+        "districtName": "عامود 1087"
+    },
+    {
+        "districtId": 3107,
+        "districtName": "عامود 1088"
+    },
+    {
+        "districtId": 3108,
+        "districtName": "عامود 1089"
+    },
+    {
+        "districtId": 3109,
+        "districtName": "عامود 1090"
+    },
+    {
+        "districtId": 3110,
+        "districtName": "عامود 1091"
+    },
+    {
+        "districtId": 3111,
+        "districtName": "عامود 1092"
+    },
+    {
+        "districtId": 3112,
+        "districtName": "عامود 1093"
+    },
+    {
+        "districtId": 3113,
+        "districtName": "عامود 1094"
+    },
+    {
+        "districtId": 3114,
+        "districtName": "عامود 1095"
+    },
+    {
+        "districtId": 3115,
+        "districtName": "عامود 1096"
+    },
+    {
+        "districtId": 3116,
+        "districtName": "عامود 1097"
+    },
+    {
+        "districtId": 3117,
+        "districtName": "عامود 1098"
+    },
+    {
+        "districtId": 3118,
+        "districtName": "عامود 1099"
+    },
+    {
+        "districtId": 3119,
+        "districtName": "عامود 1100"
+    },
+    {
+        "districtId": 3120,
+        "districtName": "عامود 1101"
+    },
+    {
+        "districtId": 3121,
+        "districtName": "عامود 1102"
+    },
+    {
+        "districtId": 3122,
+        "districtName": "عامود 1103"
+    },
+    {
+        "districtId": 3123,
+        "districtName": "عامود 1104"
+    },
+    {
+        "districtId": 3124,
+        "districtName": "عامود 1105"
+    },
+    {
+        "districtId": 3125,
+        "districtName": "عامود 1106"
+    },
+    {
+        "districtId": 3126,
+        "districtName": "عامود 1107"
+    },
+    {
+        "districtId": 3127,
+        "districtName": "عامود 1108"
+    },
+    {
+        "districtId": 3128,
+        "districtName": "عامود 1109"
+    },
+    {
+        "districtId": 3129,
+        "districtName": "عامود 1110"
+    },
+    {
+        "districtId": 3130,
+        "districtName": "عامود 1111"
+    },
+    {
+        "districtId": 3131,
+        "districtName": "عامود 1112"
+    },
+    {
+        "districtId": 3132,
+        "districtName": "عامود 1113"
+    },
+    {
+        "districtId": 3133,
+        "districtName": "عامود 1114"
+    },
+    {
+        "districtId": 3134,
+        "districtName": "عامود 1115"
+    },
+    {
+        "districtId": 3135,
+        "districtName": "عامود 1116"
+    },
+    {
+        "districtId": 3136,
+        "districtName": "عامود 1117"
+    },
+    {
+        "districtId": 3137,
+        "districtName": "عامود 1118"
+    },
+    {
+        "districtId": 3138,
+        "districtName": "عامود 1119"
+    },
+    {
+        "districtId": 3139,
+        "districtName": "عامود 1120"
+    },
+    {
+        "districtId": 3140,
+        "districtName": "عامود 1121"
+    },
+    {
+        "districtId": 3141,
+        "districtName": "عامود 1122"
+    },
+    {
+        "districtId": 3142,
+        "districtName": "عامود 1123"
+    },
+    {
+        "districtId": 3143,
+        "districtName": "عامود 1124"
+    },
+    {
+        "districtId": 3144,
+        "districtName": "عامود 1125"
+    },
+    {
+        "districtId": 3145,
+        "districtName": "عامود 1126"
+    },
+    {
+        "districtId": 3146,
+        "districtName": "عامود 1127"
+    },
+    {
+        "districtId": 3147,
+        "districtName": "عامود 1128"
+    },
+    {
+        "districtId": 3148,
+        "districtName": "عامود 1129"
+    },
+    {
+        "districtId": 3149,
+        "districtName": "عامود 1130"
+    },
+    {
+        "districtId": 3150,
+        "districtName": "عامود 1131"
+    },
+    {
+        "districtId": 3151,
+        "districtName": "عامود 1132"
+    },
+    {
+        "districtId": 3152,
+        "districtName": "عامود 1133"
+    },
+    {
+        "districtId": 3153,
+        "districtName": "عامود 1134"
+    },
+    {
+        "districtId": 3154,
+        "districtName": "عامود 1135"
+    },
+    {
+        "districtId": 3155,
+        "districtName": "عامود 1136"
+    },
+    {
+        "districtId": 3156,
+        "districtName": "عامود 1137"
+    },
+    {
+        "districtId": 3157,
+        "districtName": "عامود 1138"
+    },
+    {
+        "districtId": 3158,
+        "districtName": "عامود 1139"
+    },
+    {
+        "districtId": 3159,
+        "districtName": "عامود 1140"
+    },
+    {
+        "districtId": 3160,
+        "districtName": "عامود 1141"
+    },
+    {
+        "districtId": 3161,
+        "districtName": "عامود 1142"
+    },
+    {
+        "districtId": 3162,
+        "districtName": "عامود 1143"
+    },
+    {
+        "districtId": 3163,
+        "districtName": "عامود 1144"
+    },
+    {
+        "districtId": 3164,
+        "districtName": "عامود 1145"
+    },
+    {
+        "districtId": 3165,
+        "districtName": "عامود 1146"
+    },
+    {
+        "districtId": 3166,
+        "districtName": "عامود 1147"
+    },
+    {
+        "districtId": 3167,
+        "districtName": "عامود 1148"
+    },
+    {
+        "districtId": 3168,
+        "districtName": "عامود 1149"
+    },
+    {
+        "districtId": 3169,
+        "districtName": "عامود 1150"
+    },
+    {
+        "districtId": 3170,
+        "districtName": "عامود 1151"
+    },
+    {
+        "districtId": 3171,
+        "districtName": "عامود 1152"
+    },
+    {
+        "districtId": 3172,
+        "districtName": "عامود 1153"
+    },
+    {
+        "districtId": 3173,
+        "districtName": "عامود 1154"
+    },
+    {
+        "districtId": 3174,
+        "districtName": "عامود 1155"
+    },
+    {
+        "districtId": 3175,
+        "districtName": "عامود 1156"
+    },
+    {
+        "districtId": 3176,
+        "districtName": "عامود 1157"
+    },
+    {
+        "districtId": 3177,
+        "districtName": "عامود 1158"
+    },
+    {
+        "districtId": 3178,
+        "districtName": "عامود 1159"
+    },
+    {
+        "districtId": 3179,
+        "districtName": "عامود 1160"
+    },
+    {
+        "districtId": 3180,
+        "districtName": "عامود 1161"
+    },
+    {
+        "districtId": 3181,
+        "districtName": "عامود 1162"
+    },
+    {
+        "districtId": 3182,
+        "districtName": "عامود 1163"
+    },
+    {
+        "districtId": 3183,
+        "districtName": "عامود 1164"
+    },
+    {
+        "districtId": 3184,
+        "districtName": "عامود 1165"
+    },
+    {
+        "districtId": 3185,
+        "districtName": "عامود 1166"
+    },
+    {
+        "districtId": 3186,
+        "districtName": "عامود 1167"
+    },
+    {
+        "districtId": 3187,
+        "districtName": "عامود 1168"
+    },
+    {
+        "districtId": 3188,
+        "districtName": "عامود 1169"
+    },
+    {
+        "districtId": 3189,
+        "districtName": "عامود 1170"
+    },
+    {
+        "districtId": 3190,
+        "districtName": "عامود 1171"
+    },
+    {
+        "districtId": 3191,
+        "districtName": "عامود 1172"
+    },
+    {
+        "districtId": 3192,
+        "districtName": "عامود 1173"
+    },
+    {
+        "districtId": 3193,
+        "districtName": "عامود 1174"
+    },
+    {
+        "districtId": 3194,
+        "districtName": "عامود 1175"
+    },
+    {
+        "districtId": 3195,
+        "districtName": "عامود 1176"
+    },
+    {
+        "districtId": 3196,
+        "districtName": "عامود 1177"
+    },
+    {
+        "districtId": 3197,
+        "districtName": "عامود 1178"
+    },
+    {
+        "districtId": 3198,
+        "districtName": "عامود 1179"
+    },
+    {
+        "districtId": 3199,
+        "districtName": "عامود 1180"
+    },
+    {
+        "districtId": 3200,
+        "districtName": "عامود 1181"
+    },
+    {
+        "districtId": 3201,
+        "districtName": "عامود 1182"
+    },
+    {
+        "districtId": 3202,
+        "districtName": "عامود 1183"
+    },
+    {
+        "districtId": 3203,
+        "districtName": "عامود 1184"
+    },
+    {
+        "districtId": 3204,
+        "districtName": "عامود 1185"
+    },
+    {
+        "districtId": 3205,
+        "districtName": "عامود 1186"
+    },
+    {
+        "districtId": 3206,
+        "districtName": "عامود 1187"
+    },
+    {
+        "districtId": 3207,
+        "districtName": "عامود 1188"
+    },
+    {
+        "districtId": 3208,
+        "districtName": "عامود 1189"
+    },
+    {
+        "districtId": 3209,
+        "districtName": "عامود 1190"
+    },
+    {
+        "districtId": 3210,
+        "districtName": "عامود 1191"
+    },
+    {
+        "districtId": 3211,
+        "districtName": "عامود 1192"
+    },
+    {
+        "districtId": 3212,
+        "districtName": "عامود 1193"
+    },
+    {
+        "districtId": 3213,
+        "districtName": "عامود 1194"
+    },
+    {
+        "districtId": 3214,
+        "districtName": "عامود 1195"
+    },
+    {
+        "districtId": 3215,
+        "districtName": "عامود 1196"
+    },
+    {
+        "districtId": 3216,
+        "districtName": "عامود 1197"
+    },
+    {
+        "districtId": 3217,
+        "districtName": "عامود 1198"
+    },
+    {
+        "districtId": 3218,
+        "districtName": "عامود 1199"
+    },
+    {
+        "districtId": 3219,
+        "districtName": "عامود 1200"
+    },
+    {
+        "districtId": 3220,
+        "districtName": "عامود 1201"
+    },
+    {
+        "districtId": 3221,
+        "districtName": "عامود 1202"
+    },
+    {
+        "districtId": 3222,
+        "districtName": "عامود 1203"
+    },
+    {
+        "districtId": 3223,
+        "districtName": "عامود 1204"
+    },
+    {
+        "districtId": 3224,
+        "districtName": "عامود 1205"
+    },
+    {
+        "districtId": 3225,
+        "districtName": "عامود 1206"
+    },
+    {
+        "districtId": 3226,
+        "districtName": "عامود 1207"
+    },
+    {
+        "districtId": 3227,
+        "districtName": "عامود 1208"
+    },
+    {
+        "districtId": 3228,
+        "districtName": "عامود 1209"
+    },
+    {
+        "districtId": 3229,
+        "districtName": "عامود 1210"
+    },
+    {
+        "districtId": 3230,
+        "districtName": "عامود 1211"
+    },
+    {
+        "districtId": 3231,
+        "districtName": "عامود 1212"
+    },
+    {
+        "districtId": 3232,
+        "districtName": "عامود 1213"
+    },
+    {
+        "districtId": 3233,
+        "districtName": "عامود 1214"
+    },
+    {
+        "districtId": 3234,
+        "districtName": "عامود 1215"
+    },
+    {
+        "districtId": 3235,
+        "districtName": "عامود 1216"
+    },
+    {
+        "districtId": 3236,
+        "districtName": "عامود 1217"
+    },
+    {
+        "districtId": 3237,
+        "districtName": "عامود 1218"
+    },
+    {
+        "districtId": 3238,
+        "districtName": "عامود 1219"
+    },
+    {
+        "districtId": 3239,
+        "districtName": "عامود 1220"
+    },
+    {
+        "districtId": 3240,
+        "districtName": "عامود 1221"
+    },
+    {
+        "districtId": 3241,
+        "districtName": "عامود 1222"
+    },
+    {
+        "districtId": 3242,
+        "districtName": "عامود 1223"
+    },
+    {
+        "districtId": 3243,
+        "districtName": "عامود 1224"
+    },
+    {
+        "districtId": 3244,
+        "districtName": "عامود 1225"
+    },
+    {
+        "districtId": 3245,
+        "districtName": "عامود 1226"
+    },
+    {
+        "districtId": 3246,
+        "districtName": "عامود 1227"
+    },
+    {
+        "districtId": 3247,
+        "districtName": "عامود 1228"
+    },
+    {
+        "districtId": 3248,
+        "districtName": "عامود 1229"
+    },
+    {
+        "districtId": 3249,
+        "districtName": "عامود 1230"
+    },
+    {
+        "districtId": 3250,
+        "districtName": "عامود 1231"
+    },
+    {
+        "districtId": 3251,
+        "districtName": "عامود 1232"
+    },
+    {
+        "districtId": 3252,
+        "districtName": "عامود 1233"
+    },
+    {
+        "districtId": 3253,
+        "districtName": "عامود 1234"
+    },
+    {
+        "districtId": 3254,
+        "districtName": "عامود 1235"
+    },
+    {
+        "districtId": 3255,
+        "districtName": "عامود 1236"
+    },
+    {
+        "districtId": 3256,
+        "districtName": "عامود 1237"
+    },
+    {
+        "districtId": 3257,
+        "districtName": "عامود 1238"
+    },
+    {
+        "districtId": 3258,
+        "districtName": "عامود 1239"
+    },
+    {
+        "districtId": 3259,
+        "districtName": "عامود 1240"
+    },
+    {
+        "districtId": 3260,
+        "districtName": "عامود 1241"
+    },
+    {
+        "districtId": 3261,
+        "districtName": "عامود 1242"
+    },
+    {
+        "districtId": 3262,
+        "districtName": "عامود 1243"
+    },
+    {
+        "districtId": 3263,
+        "districtName": "عامود 1244"
+    },
+    {
+        "districtId": 3264,
+        "districtName": "عامود 1245"
+    },
+    {
+        "districtId": 3265,
+        "districtName": "عامود 1246"
+    },
+    {
+        "districtId": 3266,
+        "districtName": "عامود 1247"
+    },
+    {
+        "districtId": 3267,
+        "districtName": "عامود 1248"
+    },
+    {
+        "districtId": 3268,
+        "districtName": "عامود 1249"
+    },
+    {
+        "districtId": 3269,
+        "districtName": "عامود 1250"
+    },
+    {
+        "districtId": 3270,
+        "districtName": "عامود 1251"
+    },
+    {
+        "districtId": 3271,
+        "districtName": "عامود 1252"
+    },
+    {
+        "districtId": 3272,
+        "districtName": "عامود 1253"
+    },
+    {
+        "districtId": 3273,
+        "districtName": "عامود 1254"
+    },
+    {
+        "districtId": 3274,
+        "districtName": "عامود 1255"
+    },
+    {
+        "districtId": 3275,
+        "districtName": "عامود 1256"
+    },
+    {
+        "districtId": 3276,
+        "districtName": "عامود 1257"
+    },
+    {
+        "districtId": 3277,
+        "districtName": "عامود 1258"
+    },
+    {
+        "districtId": 3278,
+        "districtName": "عامود 1259"
+    },
+    {
+        "districtId": 3279,
+        "districtName": "عامود 1260"
+    },
+    {
+        "districtId": 3280,
+        "districtName": "عامود 1261"
+    },
+    {
+        "districtId": 3281,
+        "districtName": "عامود 1262"
+    },
+    {
+        "districtId": 3282,
+        "districtName": "عامود 1263"
+    },
+    {
+        "districtId": 3283,
+        "districtName": "عامود 1264"
+    },
+    {
+        "districtId": 3284,
+        "districtName": "عامود 1265"
+    },
+    {
+        "districtId": 3285,
+        "districtName": "عامود 1266"
+    },
+    {
+        "districtId": 3286,
+        "districtName": "عامود 1267"
+    },
+    {
+        "districtId": 3287,
+        "districtName": "عامود 1268"
+    },
+    {
+        "districtId": 3288,
+        "districtName": "عامود 1269"
+    },
+    {
+        "districtId": 3289,
+        "districtName": "عامود 1270"
+    },
+    {
+        "districtId": 3290,
+        "districtName": "عامود 1271"
+    },
+    {
+        "districtId": 3291,
+        "districtName": "عامود 1272"
+    },
+    {
+        "districtId": 3292,
+        "districtName": "عامود 1273"
+    },
+    {
+        "districtId": 3293,
+        "districtName": "عامود 1274"
+    },
+    {
+        "districtId": 3294,
+        "districtName": "عامود 1275"
+    },
+    {
+        "districtId": 3295,
+        "districtName": "عامود 1276"
+    },
+    {
+        "districtId": 3296,
+        "districtName": "عامود 1277"
+    },
+    {
+        "districtId": 3297,
+        "districtName": "عامود 1278"
+    },
+    {
+        "districtId": 3298,
+        "districtName": "عامود 1279"
+    },
+    {
+        "districtId": 3299,
+        "districtName": "عامود 1280"
+    },
+    {
+        "districtId": 3300,
+        "districtName": "عامود 1281"
+    },
+    {
+        "districtId": 3301,
+        "districtName": "عامود 1282"
+    },
+    {
+        "districtId": 3302,
+        "districtName": "عامود 1283"
+    },
+    {
+        "districtId": 3303,
+        "districtName": "عامود 1284"
+    },
+    {
+        "districtId": 3304,
+        "districtName": "عامود 1285"
+    },
+    {
+        "districtId": 3305,
+        "districtName": "عامود 1286"
+    },
+    {
+        "districtId": 3306,
+        "districtName": "عامود 1287"
+    },
+    {
+        "districtId": 3307,
+        "districtName": "عامود 1288"
+    },
+    {
+        "districtId": 3308,
+        "districtName": "عامود 1289"
+    },
+    {
+        "districtId": 3309,
+        "districtName": "عامود 1290"
+    },
+    {
+        "districtId": 3310,
+        "districtName": "عامود 1291"
+    },
+    {
+        "districtId": 3311,
+        "districtName": "عامود 1292"
+    },
+    {
+        "districtId": 3312,
+        "districtName": "عامود 1293"
+    },
+    {
+        "districtId": 3313,
+        "districtName": "عامود 1294"
+    },
+    {
+        "districtId": 3314,
+        "districtName": "عامود 1295"
+    },
+    {
+        "districtId": 3315,
+        "districtName": "عامود 1296"
+    },
+    {
+        "districtId": 3316,
+        "districtName": "عامود 1297"
+    },
+    {
+        "districtId": 3317,
+        "districtName": "عامود 1298"
+    },
+    {
+        "districtId": 3318,
+        "districtName": "عامود 1299"
+    },
+    {
+        "districtId": 3319,
+        "districtName": "عامود 1300"
+    },
+    {
+        "districtId": 3320,
+        "districtName": "عامود 1301"
+    },
+    {
+        "districtId": 3321,
+        "districtName": "عامود 1302"
+    },
+    {
+        "districtId": 3322,
+        "districtName": "عامود 1303"
+    },
+    {
+        "districtId": 3323,
+        "districtName": "عامود 1304"
+    },
+    {
+        "districtId": 3324,
+        "districtName": "عامود 1305"
+    },
+    {
+        "districtId": 3325,
+        "districtName": "عامود 1306"
+    },
+    {
+        "districtId": 3326,
+        "districtName": "عامود 1307"
+    },
+    {
+        "districtId": 3327,
+        "districtName": "عامود 1308"
+    },
+    {
+        "districtId": 3328,
+        "districtName": "عامود 1309"
+    },
+    {
+        "districtId": 3329,
+        "districtName": "عامود 1310"
+    },
+    {
+        "districtId": 3330,
+        "districtName": "عامود 1311"
+    },
+    {
+        "districtId": 3331,
+        "districtName": "عامود 1312"
+    },
+    {
+        "districtId": 3332,
+        "districtName": "عامود 1313"
+    },
+    {
+        "districtId": 3333,
+        "districtName": "عامود 1314"
+    },
+    {
+        "districtId": 3334,
+        "districtName": "عامود 1315"
+    },
+    {
+        "districtId": 3335,
+        "districtName": "عامود 1316"
+    },
+    {
+        "districtId": 3336,
+        "districtName": "عامود 1317"
+    },
+    {
+        "districtId": 3337,
+        "districtName": "عامود 1318"
+    },
+    {
+        "districtId": 3338,
+        "districtName": "عامود 1319"
+    },
+    {
+        "districtId": 3339,
+        "districtName": "عامود 1320"
+    },
+    {
+        "districtId": 3340,
+        "districtName": "عامود 1321"
+    },
+    {
+        "districtId": 3341,
+        "districtName": "عامود 1322"
+    },
+    {
+        "districtId": 3342,
+        "districtName": "عامود 1323"
+    },
+    {
+        "districtId": 3343,
+        "districtName": "عامود 1324"
+    },
+    {
+        "districtId": 3344,
+        "districtName": "عامود 1325"
+    },
+    {
+        "districtId": 3345,
+        "districtName": "عامود 1326"
+    },
+    {
+        "districtId": 3346,
+        "districtName": "عامود 1327"
+    },
+    {
+        "districtId": 3347,
+        "districtName": "عامود 1328"
+    },
+    {
+        "districtId": 3348,
+        "districtName": "عامود 1329"
+    },
+    {
+        "districtId": 3349,
+        "districtName": "عامود 1330"
+    },
+    {
+        "districtId": 3350,
+        "districtName": "عامود 1331"
+    },
+    {
+        "districtId": 3351,
+        "districtName": "عامود 1332"
+    },
+    {
+        "districtId": 3352,
+        "districtName": "عامود 1333"
+    },
+    {
+        "districtId": 3353,
+        "districtName": "عامود 1334"
+    },
+    {
+        "districtId": 3354,
+        "districtName": "عامود 1335"
+    },
+    {
+        "districtId": 3355,
+        "districtName": "عامود 1336"
+    },
+    {
+        "districtId": 3356,
+        "districtName": "عامود 1337"
+    },
+    {
+        "districtId": 3357,
+        "districtName": "عامود 1338"
+    },
+    {
+        "districtId": 3358,
+        "districtName": "عامود 1339"
+    },
+    {
+        "districtId": 3359,
+        "districtName": "عامود 1340"
+    },
+    {
+        "districtId": 3360,
+        "districtName": "عامود 1341"
+    },
+    {
+        "districtId": 3361,
+        "districtName": "عامود 1342"
+    },
+    {
+        "districtId": 3362,
+        "districtName": "عامود 1343"
+    },
+    {
+        "districtId": 3363,
+        "districtName": "عامود 1344"
+    },
+    {
+        "districtId": 3364,
+        "districtName": "عامود 1345"
+    },
+    {
+        "districtId": 3365,
+        "districtName": "عامود 1346"
+    },
+    {
+        "districtId": 3366,
+        "districtName": "عامود 1347"
+    },
+    {
+        "districtId": 3367,
+        "districtName": "عامود 1348"
+    },
+    {
+        "districtId": 3368,
+        "districtName": "عامود 1349"
+    },
+    {
+        "districtId": 3369,
+        "districtName": "عامود 1350"
+    },
+    {
+        "districtId": 3370,
+        "districtName": "عامود 1351"
+    },
+    {
+        "districtId": 3371,
+        "districtName": "عامود 1352"
+    },
+    {
+        "districtId": 3372,
+        "districtName": "عامود 1353"
+    },
+    {
+        "districtId": 3373,
+        "districtName": "عامود 1354"
+    },
+    {
+        "districtId": 3374,
+        "districtName": "عامود 1355"
+    },
+    {
+        "districtId": 3375,
+        "districtName": "عامود 1356"
+    },
+    {
+        "districtId": 3376,
+        "districtName": "عامود 1357"
+    },
+    {
+        "districtId": 3377,
+        "districtName": "عامود 1358"
+    },
+    {
+        "districtId": 3378,
+        "districtName": "عامود 1359"
+    },
+    {
+        "districtId": 3379,
+        "districtName": "عامود 1360"
+    },
+    {
+        "districtId": 3380,
+        "districtName": "عامود 1361"
+    },
+    {
+        "districtId": 3381,
+        "districtName": "عامود 1362"
+    },
+    {
+        "districtId": 3382,
+        "districtName": "عامود 1363"
+    },
+    {
+        "districtId": 3383,
+        "districtName": "عامود 1364"
+    },
+    {
+        "districtId": 3384,
+        "districtName": "عامود 1365"
+    },
+    {
+        "districtId": 3385,
+        "districtName": "عامود 1366"
+    },
+    {
+        "districtId": 3386,
+        "districtName": "عامود 1367"
+    },
+    {
+        "districtId": 3387,
+        "districtName": "عامود 1368"
+    },
+    {
+        "districtId": 3388,
+        "districtName": "عامود 1369"
+    },
+    {
+        "districtId": 3389,
+        "districtName": "عامود 1370"
+    },
+    {
+        "districtId": 3390,
+        "districtName": "عامود 1371"
+    },
+    {
+        "districtId": 3391,
+        "districtName": "عامود 1372"
+    },
+    {
+        "districtId": 3392,
+        "districtName": "عامود 1373"
+    },
+    {
+        "districtId": 3393,
+        "districtName": "عامود 1374"
+    },
+    {
+        "districtId": 3394,
+        "districtName": "عامود 1375"
+    },
+    {
+        "districtId": 3395,
+        "districtName": "عامود 1376"
+    },
+    {
+        "districtId": 3396,
+        "districtName": "عامود 1377"
+    },
+    {
+        "districtId": 3397,
+        "districtName": "عامود 1378"
+    },
+    {
+        "districtId": 3398,
+        "districtName": "عامود 1379"
+    },
+    {
+        "districtId": 3399,
+        "districtName": "عامود 1380"
+    },
+    {
+        "districtId": 3400,
+        "districtName": "عامود 1381"
+    },
+    {
+        "districtId": 3401,
+        "districtName": "عامود 1382"
+    },
+    {
+        "districtId": 3402,
+        "districtName": "عامود 1383"
+    },
+    {
+        "districtId": 3403,
+        "districtName": "عامود 1384"
+    },
+    {
+        "districtId": 3404,
+        "districtName": "عامود 1385"
+    },
+    {
+        "districtId": 3405,
+        "districtName": "عامود 1386"
+    },
+    {
+        "districtId": 3406,
+        "districtName": "عامود 1387"
+    },
+    {
+        "districtId": 3407,
+        "districtName": "عامود 1388"
+    },
+    {
+        "districtId": 3408,
+        "districtName": "عامود 1389"
+    },
+    {
+        "districtId": 3409,
+        "districtName": "عامود 1390"
+    },
+    {
+        "districtId": 3410,
+        "districtName": "عامود 1391"
+    },
+    {
+        "districtId": 3411,
+        "districtName": "عامود 1392"
+    },
+    {
+        "districtId": 3412,
+        "districtName": "عامود 1393"
+    },
+    {
+        "districtId": 3413,
+        "districtName": "عامود 1394"
+    },
+    {
+        "districtId": 3414,
+        "districtName": "عامود 1395"
+    },
+    {
+        "districtId": 3415,
+        "districtName": "عامود 1396"
+    },
+    {
+        "districtId": 3416,
+        "districtName": "عامود 1397"
+    },
+    {
+        "districtId": 3417,
+        "districtName": "عامود 1398"
+    },
+    {
+        "districtId": 3418,
+        "districtName": "عامود 1399"
+    },
+    {
+        "districtId": 3419,
+        "districtName": "عامود 1400"
+    },
+    {
+        "districtId": 3742,
+        "districtName": "الالف دار"
+    },
+    {
+        "districtId": 3758,
+        "districtName": "الولاية"
+    },
+    {
+        "districtId": 3759,
+        "districtName": "باب بغداد"
+    },
+    {
+        "districtId": 3760,
+        "districtName": "مدينة الزائرين"
+    },
+    {
+        "districtId": 3761,
+        "districtName": "العطيشي"
+    },
+    {
+        "districtId": 3762,
+        "districtName": "شارع بني تميم"
+    },
+    {
+        "districtId": 3763,
+        "districtName": "الشبانات"
+    },
+    {
+        "districtId": 3764,
+        "districtName": "الحسينية"
+    },
+    {
+        "districtId": 3765,
+        "districtName": "طريق النجف"
+    },
+    {
+        "districtId": 3766,
+        "districtName": "مفرق العطيشي"
+    },
+    {
+        "districtId": 3767,
+        "districtName": "العباسية"
+    },
+    {
+        "districtId": 3768,
+        "districtName": "حي الميلاد"
+    },
+    {
+        "districtId": 3769,
+        "districtName": "قنطرة السلام"
+    },
+    {
+        "districtId": 3770,
+        "districtName": "الهندية"
+    },
+    {
+        "districtId": 3771,
+        "districtName": "سيطرة الوند"
+    },
+    {
+        "districtId": 3772,
+        "districtName": "الكراج الموحد"
+    },
+    {
+        "districtId": 3773,
+        "districtName": "جامعة فريحة"
+    },
+    {
+        "districtId": 3920,
+        "districtName": "شارع العباس"
+    },
+    {
+        "districtId": 3951,
+        "districtName": "حي شبانات"
+    },
+    {
+        "districtId": 3952,
+        "districtName": "حي المدراء"
+    },
+    {
+        "districtId": 3953,
+        "districtName": "حي الصمود"
+    },
+    {
+        "districtId": 3954,
+        "districtName": "الجابر"
+    },
+    {
+        "districtId": 3955,
+        "districtName": "الابراهيمية"
+    },
+    {
+        "districtId": 3956,
+        "districtName": "حي رمضان"
+    },
+    {
+        "districtId": 3957,
+        "districtName": "حي النضال"
+    },
+    {
+        "districtId": 3958,
+        "districtName": "سيطرة الشريفات"
+    },
+    {
+        "districtId": 3959,
+        "districtName": "الامام عون"
+    },
+    {
+        "districtId": 3960,
+        "districtName": "حي الحر"
+    },
+    {
+        "districtId": 3961,
+        "districtName": "حي العسكرية"
+    },
+    {
+        "districtId": 3962,
+        "districtName": "طريق بغداد"
+    },
+    {
+        "districtId": 3963,
+        "districtName": "حي الامام"
+    },
+    {
+        "districtId": 3964,
+        "districtName": "قضاء الحسينية"
+    },
+    {
+        "districtId": 3965,
+        "districtName": "طريق كربلاء بغداد"
+    },
+    {
+        "districtId": 4173,
+        "districtName": "شهداء الموظفين"
+    },
+    {
+        "districtId": 4247,
+        "districtName": "شارع النجف"
+    },
+    {
+        "districtId": 4248,
+        "districtName": "جاير"
+    },
+    {
+        "districtId": 4250,
+        "districtName": "حصوة السعود"
+    },
+    {
+        "districtId": 4261,
+        "districtName": "حي الانتفاضة الثالثة"
+    },
+    {
+        "districtId": 4274,
+        "districtName": "حي الشرطة"
+    },
+    {
+        "districtId": 4304,
+        "districtName": "البلديات "
+    },
+    {
+        "districtId": 4305,
+        "districtName": "المركزية "
+    },
+    {
+        "districtId": 4310,
+        "districtName": "الحر الصغير"
+    },
+    {
+        "districtId": 4348,
+        "districtName": "باب طارق"
+    },
+    {
+        "districtId": 4349,
+        "districtName": "باب الطاق"
+    },
+    {
+        "districtId": 4350,
+        "districtName": "الجمالية"
+    },
+    {
+        "districtId": 4358,
+        "districtName": "حي الزيتون "
+    },
+    {
+        "districtId": 4362,
+        "districtName": "حي الامامين"
+    },
+    {
+        "districtId": 4367,
+        "districtName": "شارع سيد جودة"
+    },
+    {
+        "districtId": 4378,
+        "districtName": "الروضتين"
+    },
+    {
+        "districtId": 4380,
+        "districtName": "سوق الحبوبي"
+    },
+    {
+        "districtId": 4386,
+        "districtName": "الحي الصناعي"
+    },
+    {
+        "districtId": 4387,
+        "districtName": "حي الجوادين"
+    },
+    {
+        "districtId": 4388,
+        "districtName": "حي المهندسين"
+    },
+    {
+        "districtId": 4395,
+        "districtName": "حي الانتفاضة الاولى"
+    },
+    {
+        "districtId": 4396,
+        "districtName": "العباسية الشرقية الثانية"
+    },
+    {
+        "districtId": 4412,
+        "districtName": "المحيط"
+    },
+    {
+        "districtId": 4414,
+        "districtName": "الكمالية"
+    },
+    {
+        "districtId": 4416,
+        "districtName": "حي القدس"
+    },
+    {
+        "districtId": 4428,
+        "districtName": "الطريق الحولي"
+    },
+    {
+        "districtId": 4433,
+        "districtName": "سيدة رقية"
+    },
+    {
+        "districtId": 4456,
+        "districtName": "حي الامل"
+    },
+    {
+        "districtId": 4463,
+        "districtName": "حي الايطارات"
+    },
+    {
+        "districtId": 4471,
+        "districtName": "حي الاساتذة "
+    },
+    {
+        "districtId": 4473,
+        "districtName": "المخيم"
+    },
+    {
+        "districtId": 4475,
+        "districtName": "منطقة الطاقة"
+    },
+    {
+        "districtId": 4476,
+        "districtName": "الانصار"
+    },
+    {
+        "districtId": 4484,
+        "districtName": "البناء الجاهز"
+    },
+    {
+        "districtId": 4488,
+        "districtName": "شارع الجمهورية"
+    },
+    {
+        "districtId": 4502,
+        "districtName": "شهداء سيف سعد"
+    },
+    {
+        "districtId": 4513,
+        "districtName": "شارع السناتر"
+    },
+    {
+        "districtId": 4526,
+        "districtName": "حي الجامعة"
+    },
+    {
+        "districtId": 4551,
+        "districtName": "قرية البوحميد"
+    },
+    {
+        "districtId": 4559,
+        "districtName": "درة كربلاء"
+    },
+    {
+        "districtId": 4578,
+        "districtName": "النخيب "
+    },
+    {
+        "districtId": 4587,
+        "districtName": "مطار كربلاء"
+    },
+    {
+        "districtId": 4614,
+        "districtName": "الرزازة"
+    },
+    {
+        "districtId": 4631,
+        "districtName": "الحرية"
+    },
+    {
+        "districtId": 4633,
+        "districtName": "سيد الاوصياء"
+    },
+    {
+        "districtId": 4640,
+        "districtName": "الانتفاضة الثانية"
+    },
+    {
+        "districtId": 4645,
+        "districtName": "البهادلية"
+    },
+    {
+        "districtId": 4651,
+        "districtName": "حي الاطارات"
+    },
+    {
+        "districtId": 4652,
+        "districtName": "حي الجاير"
+    },
+    {
+        "districtId": 4663,
+        "districtName": "حي التربية"
+    },
+    {
+        "districtId": 4691,
+        "districtName": "فريحة "
+    },
+    {
+        "districtId": 4719,
+        "districtName": "حي الشهد"
+    },
+    {
+        "districtId": 4729,
+        "districtName": "مصفى نفط كربلاء"
+    },
+    {
+        "districtId": 4750,
+        "districtName": "حي الصحفيين "
+    },
+    {
+        "districtId": 4758,
+        "districtName": "العلوة القديمة"
+    },
+    {
+        "districtId": 4775,
+        "districtName": "شارع المدرسي"
+    },
+    {
+        "districtId": 4819,
+        "districtName": "حي الثورة"
+    },
+    {
+        "districtId": 4820,
+        "districtName": "شارع الحداد"
+    },
+    {
+        "districtId": 4846,
+        "districtName": "شارع المحافظ القديم "
+    },
+    {
+        "districtId": 4851,
+        "districtName": "حي الزهور"
+    },
+    {
+        "districtId": 4852,
+        "districtName": "حي الاصلاح"
+    },
+    {
+        "districtId": 4854,
+        "districtName": "بدعة اسود"
+    },
+    {
+        "districtId": 4875,
+        "districtName": "حي اللايح"
+    },
+    {
+        "districtId": 4886,
+        "districtName": "شارع السدرة"
+    },
+    {
+        "districtId": 4887,
+        "districtName": "شارع العلقمي"
+    },
+    {
+        "districtId": 4896,
+        "districtName": "شارع المحافظة"
+    },
+    {
+        "districtId": 4899,
+        "districtName": "عرعر"
+    },
+    {
+        "districtId": 4908,
+        "districtName": "مجمع الدرة السكني"
+    },
+    {
+        "districtId": 4938,
+        "districtName": "البراميه"
+    },
+    {
+        "districtId": 4940,
+        "districtName": "حي اليرموك"
+    },
+    {
+        "districtId": 4947,
+        "districtName": "الجرية"
+    },
+    {
+        "districtId": 4952,
+        "districtName": "حي المعملجي "
+    },
+    {
+        "districtId": 4969,
+        "districtName": "حي الايمان"
+    },
+    {
+        "districtId": 4972,
+        "districtName": "كربلاء الجديدة"
+    },
+    {
+        "districtId": 4987,
+        "districtName": "حي التركمان"
+    },
+    {
+        "districtId": 4990,
+        "districtName": "حي الكامل"
+    },
+    {
+        "districtId": 4995,
+        "districtName": "قنطرة البيضاء"
+    },
+    {
+        "districtId": 5002,
+        "districtName": "خان الربع"
+    },
+    {
+        "districtId": 5005,
+        "districtName": "السعدية"
+    },
+    {
+        "districtId": 5013,
+        "districtName": "سيد اسماعيل"
+    },
+    {
+        "districtId": 5016,
+        "districtName": "حي التعليب"
+    },
+    {
+        "districtId": 5022,
+        "districtName": "عرب صالح"
+    },
+    {
+        "districtId": 5024,
+        "districtName": "باب القبلة"
+    },
+    {
+        "districtId": 5029,
+        "districtName": "باب السلالمة"
+    },
+    {
+        "districtId": 5031,
+        "districtName": "الاخيضر"
+    },
+    {
+        "districtId": 5034,
+        "districtName": "خمسينات"
+    },
+    {
+        "districtId": 5035,
+        "districtName": "الروفة"
+    },
+    {
+        "districtId": 5037,
+        "districtName": "الحيدرية"
+    },
+    {
+        "districtId": 5040,
+        "districtName": "سومر"
+    },
+    {
+        "districtId": 5070,
+        "districtName": "المدينة القديمة"
+    },
+    {
+        "districtId": 5080,
+        "districtName": "قرية الشريعة"
+    },
+    {
+        "districtId": 5084,
+        "districtName": "حي الحجة "
+    },
+    {
+        "districtId": 5089,
+        "districtName": "الاسكان العسكري "
+    }
+]

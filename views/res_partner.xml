@@ -1,0 +1,21 @@
+<odoo>
+    <data>
+        <!-- Inherit the existing partner form view -->
+        <record id="view_partner_form_inherit" model="ir.ui.view">
+            <field name="name">res.partner.form.inherit</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="base.view_partner_form"/>
+            <field name="arch" type="xml">
+                <!-- Make the city field invisible -->
+                <xpath expr="//field[@name='city']" position="attributes">
+                    <attribute name="invisible">1</attribute>
+                </xpath>
+
+                <!-- Add district_id next to state_id -->
+                <xpath expr="//field[@name='state_id']" position="after">
+                    <field name="district_id" placeholder="Select District"/>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>
