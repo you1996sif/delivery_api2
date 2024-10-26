@@ -1,10 +1,10 @@
 {
-  'name': 'Prime Delivery API',
+  'name': 'qwe Prime Delivery API',
   'version': '1.0',
   'category': 'Custom',
   'author': 'Yousif Basil',
   'summary': 'API for Primte Company to Update Order Status',
-  'depends': ['sale', 'stock'],  
+  'depends': ['sale', 'stock','website'],  
   'data': [
       
       'security/ir.model.access.csv',
