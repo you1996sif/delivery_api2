@@ -13,7 +13,7 @@
       'views/district_view.xml', 
       'views/res_partner.xml', 
       'views/account_move.xml',
-
+    'views/templates.xml',
       
   ],
   'assets': {
