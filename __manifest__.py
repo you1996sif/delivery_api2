@@ -1,5 +1,5 @@
 {
-  'name': 'Prime Delivery API',
+  'name': 'qwe Prime Delivery API',
   'version': '1.0',
   'category': 'Custom',
   'author': 'Yousif Basil',
