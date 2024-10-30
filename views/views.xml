@@ -13,6 +13,10 @@
                         decoration-warning="delivery_status == 'resend' or delivery_status == 'retry_delivery'" 
                         decoration-success="delivery_status == 'succdlv' or delivery_status == 'sucs_dlv' or delivery_status == 'delivered'" 
                         invisible="context.get('default_picking_type_code') == 'incoming'"/>
+                <field name="delivery_date" attrs="{'invisible': [('delivery_status', 'not in', ['err_senddlv_succ', 'succdlv', 'sucs_dlv', 'dlv_afterfail'])]}"/>
+                <field name="return_deadline" attrs="{'invisible': [('delivery_date', '=', False)]}"/>
+                <field name="remaining_return_days" attrs="{'invisible': [('delivery_date', '=', False)]}"/>
+                <field name="can_be_returned" invisible="1"/>
              
               </xpath>
               <xpath expr="//field[@name='delivery_status']" position="after">
@@ -43,6 +47,29 @@
                 </xpath>
             </field>
         </record>
+
+        <!-- Extend Sale Order Form View -->
+    <record id="view_order_form_inherit_return_timer" model="ir.ui.view">
+        <field name="name">sale.order.form.inherit.return.timer</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//div[@name='button_box']" position="inside">
+                <button name="action_view_return_timer" 
+                        type="object"
+                        class="oe_stat_button"
+                        icon="fa-clock-o"
+                        attrs="{'invisible': [('remaining_return_days', '=', 0)]}">
+                    <div class="o_field_widget o_stat_info">
+                        <span class="o_stat_value">
+                            <field name="remaining_return_days"/> Days
+                        </span>
+                        <span class="o_stat_text">To Return</span>
+                    </div>
+                </button>
+            </xpath>
+        </field>
+    </record>
      
 
         

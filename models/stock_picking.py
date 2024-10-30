@@ -1,9 +1,10 @@
 import os
-from odoo import models, fields, exceptions , _
+from odoo import models, fields, exceptions , _, api
 import requests
 from odoo.http import request, Response
 import html2text
 import logging
+from datetime import datetime, timedelta
 
 
 _logger = logging.getLogger(__name__)
@@ -30,14 +31,14 @@ class StockPicking(models.Model):
         ('resend', 'إعادة إرسال'),
         ('retry_delivery', 'إعادة توصيل'),
         ('gave_to_customer', 'تسليم الراجع للعميل'),
-        ('err_senddlv_succ', 'تسليم بنجاح'),
-        ('succdlv', 'تسليم بنجاح'),
-        ('sucs_dlv', 'تسليم بنجاح'),
+        ('err_senddlv_succ', 'تسليم بنجاح'),#
+        ('succdlv', 'تسليم بنجاح'),#
+        ('sucs_dlv', 'تسليم بنجاح'),#
         ('part_succ', 'تسليم بنجاح جزئيا'),
-        ('sucs_dlv_changeamt', 'تسليم بنجاح مع تغيير مبلغ الوصل'),
+        ('sucs_dlv_changeamt', 'تسليم بنجاح مع تغيير مبلغ الوصل'),#
         ('chnge_agent', 'تغيير المندوب'),
-        ('dlv_afterfail', 'تم التسليم'),
-        ('err_senddlv_succ', 'تم التسليم بنجاح'),
+        ('dlv_afterfail', 'تم التسليم'),#
+        ('err_senddlv_succ', 'تم التسليم بنجاح'),#
         ('rtn_withagent', 'راجع عند المندوب'),
         ('rtn_tostore', 'راجع للمخزن'),
         ('rtn_to_agent', 'عودة إلى قيد التوصيل'),
@@ -231,6 +232,66 @@ class StockPicking(models.Model):
             _logger.info('Shipment data prepared successfully: %s', shipment_data)
 
             return shipment_data
+    delivery_date = fields.Datetime(
+        string='Delivery Date',
+        readonly=True,
+        copy=False,
+        help='Date when the order was delivered to the customer'
+    )
+    
+    return_deadline = fields.Datetime(
+        string='Return Deadline',
+        compute='_compute_return_deadline',
+        store=True,
+        help='Deadline for customer to return the order (31 days from delivery)'
+    )
+    
+    can_be_returned = fields.Boolean(
+        string='Can Be Returned',
+        compute='_compute_can_be_returned',
+        store=True,
+        help='Technical field to indicate if the order is still within return window'
+    )
+    
+    remaining_return_days = fields.Integer(
+        string='Days Left for Return',
+        compute='_compute_remaining_return_days',
+        help='Number of days remaining to return the order'
+    )
+
+    @api.depends('delivery_date')
+    def _compute_return_deadline(self):
+        for picking in self:
+            if picking.delivery_date:
+                picking.return_deadline = picking.delivery_date + timedelta(days=31)
+            else:
+                picking.return_deadline = False
+
+    @api.depends('delivery_date', 'return_deadline')
+    def _compute_can_be_returned(self):
+        now = fields.Datetime.now()
+        for picking in self:
+            picking.can_be_returned = (
+                picking.delivery_date and 
+                picking.return_deadline and 
+                now <= picking.return_deadline
+            )
+
+    @api.depends('return_deadline')
+    def _compute_remaining_return_days(self):
+        now = fields.Datetime.now()
+        for picking in self:
+            if picking.return_deadline and picking.can_be_returned:
+                remaining = picking.return_deadline - now
+                picking.remaining_return_days = max(0, remaining.days)
+            else:
+                picking.remaining_return_days = 0
+    def write(self, vals):
+        # Set delivery date when status changes to delivered
+        if vals.get('delivery_status') in ['err_senddlv_succ', 'succdlv', 'sucs_dlv', 'dlv_afterfail']:
+            if not self.delivery_date:  # Only set if not already set
+                vals['delivery_date'] = fields.Datetime.now()
+        return super(StockPicking, self).write(vals)
 
 # [{
 #   "masterCustomerName": "My Company (San Francisco)",

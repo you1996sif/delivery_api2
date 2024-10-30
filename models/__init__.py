@@ -6,3 +6,5 @@ from . import res_partner
 #from . import api_db_middleware
 from . import prime
 from . import account_move
+from . import sale_order
+
