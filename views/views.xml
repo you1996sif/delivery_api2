@@ -1,34 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data>
         <!-- Inherit the stock.picking form view -->
         <record id="view_picking_form_inherit_status" model="ir.ui.view">
-          <field name="name">stock.picking.form.inherit.status</field>
-          <field name="model">stock.picking</field>
-          <field name="inherit_id" ref="stock.view_picking_form"/>
-          <field name="arch" type="xml">
-              <xpath expr="//field[@name='origin']" position="after">
-                <field name="delivery_status" widget="badge" 
+            <field name="name">stock.picking.form.inherit.status</field>
+            <field name="model">stock.picking</field>
+            <field name="inherit_id" ref="stock.view_picking_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='origin']" position="after">
+                    <field name="delivery_status" widget="badge" 
                         decoration-info="delivery_status == 'pending'" 
                         decoration-danger="delivery_status == 'return_to_sender' or delivery_status == 'move_onway' or delivery_status == 'toinstore'" 
                         decoration-warning="delivery_status == 'resend' or delivery_status == 'retry_delivery'" 
                         decoration-success="delivery_status == 'succdlv' or delivery_status == 'sucs_dlv' or delivery_status == 'delivered'" 
                         invisible="context.get('default_picking_type_code') == 'incoming'"/>
-                <field name="delivery_date" attrs="{'invisible': [('delivery_status', 'not in', ['err_senddlv_succ', 'succdlv', 'sucs_dlv', 'dlv_afterfail'])]}"/>
-                <field name="return_deadline" attrs="{'invisible': [('delivery_date', '=', False)]}"/>
-                <field name="remaining_return_days" attrs="{'invisible': [('delivery_date', '=', False)]}"/>
-                <field name="can_be_returned" invisible="1"/>
-             
-              </xpath>
-              <xpath expr="//field[@name='delivery_status']" position="after">
-              
-               
-                    <field name="postponed_reason"  invisible="delivery_status != 'postponed'"/>
-
-                    <field name="return_reason"   invisible="delivery_status not in   ['return_to_sender', 'rtn_withagent', 'rtn_tostore']" />
-              </xpath>
-          </field>
+                    <field name="delivery_date" 
+                        invisible="picking_type_code != 'outgoing'"/>
+                    <field name="return_deadline" 
+                        invisible="not delivery_date"/>
+                    <field name="remaining_return_days" 
+                        invisible="not delivery_date"/>
+                </xpath>
+                <xpath expr="//field[@name='delivery_status']" position="after">
+                    <field name="postponed_reason" 
+                        invisible="delivery_status != 'postponed'"/>
+                    <field name="return_reason" 
+                        invisible="delivery_status not in ['return_to_sender', 'rtn_withagent', 'rtn_tostore']"/>
+                </xpath>
+            </field>
         </record>
-      
 
         <!-- Inherit the stock.picking tree view -->
         <record id="view_picking_tree_inherit" model="ir.ui.view">
@@ -37,7 +37,6 @@
             <field name="inherit_id" ref="stock.vpicktree"/>
             <field name="arch" type="xml">
                 <xpath expr="//tree" position="inside">
-
                     <field name="delivery_status" widget="badge" 
                         decoration-info="delivery_status == 'pending'" 
                         decoration-danger="delivery_status == 'return_to_sender' or delivery_status == 'move_onway' or delivery_status == 'toinstore'" 
@@ -49,29 +48,19 @@
         </record>
 
         <!-- Extend Sale Order Form View -->
-    <record id="view_order_form_inherit_return_timer" model="ir.ui.view">
-        <field name="name">sale.order.form.inherit.return.timer</field>
-        <field name="model">sale.order</field>
-        <field name="inherit_id" ref="sale.view_order_form"/>
-        <field name="arch" type="xml">
-            <xpath expr="//div[@name='button_box']" position="inside">
-                <button name="action_view_return_timer" 
-                        type="object"
-                        class="oe_stat_button"
-                        icon="fa-clock-o"
-                        attrs="{'invisible': [('remaining_return_days', '=', 0)]}">
-                    <div class="o_field_widget o_stat_info">
-                        <span class="o_stat_value">
-                            <field name="remaining_return_days"/> Days
-                        </span>
-                        <span class="o_stat_text">To Return</span>
-                    </div>
-                </button>
-            </xpath>
-        </field>
-    </record>
-     
-
-        
+        <record id="view_order_form_inherit_return_timer" model="ir.ui.view">
+            <field name="name">sale.order.form.inherit.return.timer</field>
+            <field name="model">sale.order</field>
+            <field name="inherit_id" ref="sale.view_order_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//div[@name='button_box']" position="inside">
+                    <field name="last_delivery_id" invisible="1"/>
+                    <field name="return_deadline" 
+                        invisible="not last_delivery_id"/>
+                    <field name="remaining_return_days" 
+                        invisible="not last_delivery_id"/>
+                </xpath>
+            </field>
+        </record>
     </data>
 </odoo>
