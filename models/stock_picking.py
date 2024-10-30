@@ -242,14 +242,14 @@ class StockPicking(models.Model):
     )
     
     return_deadline = fields.Datetime(
-        string='Return Deadline',
+        string='انتهاء موعد الارجاع',
         compute='_compute_return_deadline',
         store=True,
         help='Deadline for customer to return the order (31 days from delivery)'
     )
     
     remaining_return_days = fields.Integer(
-        string='Days Left for Return',
+        string='عدد الايام المتبقية للارجاع',
         compute='_compute_remaining_return_days',
         help='Number of days remaining to return the order'
     )

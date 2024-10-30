@@ -20,13 +20,13 @@ class SaleOrder(models.Model):
     )
     
     return_deadline = fields.Datetime(
-        string='Return Deadline',
+        string='انتهاء موعد الارجاع',
         related='last_delivery_id.return_deadline',
         store=True
     )
     
     remaining_return_days = fields.Integer(
-        string='Days Left for Return',
+        string='عدد الايام المتبقية للارجاع',
         related='last_delivery_id.remaining_return_days'
     )
 

@@ -55,7 +55,7 @@
             <field name="arch" type="xml">
                 <xpath expr="//field[@name='date_order']" position="after">
                     <field name="last_delivery_id" 
-                      
+                       invisible="1"
                         />
                     <field name="return_deadline" 
                       
