@@ -53,14 +53,30 @@
             <field name="model">sale.order</field>
             <field name="inherit_id" ref="sale.view_order_form"/>
             <field name="arch" type="xml">
-                <xpath expr="//div[@name='button_box']" position="inside">
-                    <field name="last_delivery_id" invisible="1"/>
+                <xpath expr="//field[@name='date_order']" position="after">
+                    <field name="last_delivery_id" 
+                      
+                        />
                     <field name="return_deadline" 
-                        invisible="not last_delivery_id"/>
+                      
+                        />
                     <field name="remaining_return_days" 
-                        invisible="not last_delivery_id"/>
+                     
+                        />
                 </xpath>
             </field>
         </record>
     </data>
 </odoo>
+
+<!-- <xpath expr="//field[@name='date_order']" position="after">
+                    <field name="last_delivery_id" 
+                        invisible="1"
+                        />
+                    <field name="return_deadline" 
+                        invisible="not last_delivery_id"
+                        />
+                    <field name="remaining_return_days" 
+                        invisible="not last_delivery_id"
+                        />
+                </xpath> -->
