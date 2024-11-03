@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_order_form_inherit_tracking" model="ir.ui.view">
+        <field name="name">sale.order.form.inherit.tracking</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form"/>
+        <field name="arch" type="xml">
+            <field name="client_order_ref" position="after">
+                <field name="tracking_token" readonly="1" groups="base.group_system"/>
+            </field>
+            
+            <button name="action_confirm" position="after">
+                <button name="generate_tracking_link" 
+                        string="Get Tracking Link" 
+                        type="object" 
+                        class="oe_highlight"
+                        
+                />
+            </button>
+         
+        </field>
+    </record>
+</odoo>

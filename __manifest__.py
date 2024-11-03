@@ -4,7 +4,7 @@
   'category': 'Custom',
   'author': 'Yousif Basil',
   'summary': 'API for Primte Company to Update Order Status',
-  'depends': ['sale', 'stock'],  
+  'depends': ['sale', 'stock','website'],  
   'data': [
       
       'security/ir.model.access.csv',
@@ -13,6 +13,8 @@
       'views/district_view.xml', 
       'views/res_partner.xml', 
       'views/account_move.xml',
+      'views/sale_order_views.xml',
+      'views/delivery_tracking_template.xml',
   ],
   'installable': True,
   'application': False,

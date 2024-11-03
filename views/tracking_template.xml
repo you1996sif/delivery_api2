@@ -1,25 +1,47 @@
- <?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <template id="delivery_tracking_template" name="Delivery Tracking">       
-        <record id="email_template_tracking_link" model="mail.template">
-            <field name="name">Invoice: Tracking Information</field>
-            <field name="model_id" ref="account.model_account_move"/>
-            <field name="subject">Delivery Tracking Information for Invoice ${object.name}</field>
-            <field name="email_from">${user.email_formatted | safe}</field>
-            <field name="partner_to">${object.partner_id.id}</field>
-            <field name="body_html" type="html">
-                <div style="margin: 0px; padding: 0px;">
-                    <p>Dear ${object.partner_id.name},</p>
-                    <p>You can track your delivery using the following link:</p>
-                    <p>
-                        <a href="/delivery/track/${object.unique_number}" style="background-color: #875A7B; padding: 8px 16px; text-decoration: none; color: #fff; border-radius: 5px; font-size:13px;">
-                            Track Your Delivery
-                        </a>
-                    </p>
-                    <br/>
-                    <p>Thank you for your business!</p>
-                </div>
-            </field>
-        </record>
-    </template>
+    <!-- Make template accessible to website -->
+    <record id="delivery_tracking_page" model="website.page">
+        <field name="name">Delivery Tracking</field>
+        <field name="website_published">True</field>
+        <field name="url">/delivery/track</field>
+        <field name="is_published">True</field>
+        <field name="type">qweb</field>
+        <field name="key">delivery_api2.simple_delivery_tracking_template</field>
+        <field name="arch" type="xml">
+            <t t-name="delivery_api2.simple_delivery_tracking_template">
+                <t t-call="website.layout">
+                    <div class="container mt-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h3 class="card-title mb-4">Delivery Tracking Information</h3>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="mb-3">
+                                            <strong>Customer Name:</strong>
+                                            <p class="mb-0" t-esc="partner_name"/>
+                                        </div>
+                                        <div class="mb-3">
+                                            <strong>Invoice Number:</strong>
+                                            <p class="mb-0" t-esc="invoice_number"/>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="mb-3">
+                                            <strong>Delivery Status:</strong>
+                                            <p class="mb-0" t-esc="delivery_status"/>
+                                        </div>
+                                        <div class="mb-3">
+                                            <strong>Invoice Date:</strong>
+                                            <p class="mb-0" t-esc="invoice_date" t-options='{"widget": "date"}'/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </t>
+            </t>
+        </field>
+    </record>
 </odoo>

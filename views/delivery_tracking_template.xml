@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="delivery_tracking_template">
+        <html>
+            <head>
+                <title>Delivery Tracking</title>
+                <meta name="viewport" content="width=device-width, initial-scale=1"/>
+                <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+                <style>
+                    body { 
+                        background-color: #f8f9fa;
+                        padding: 20px;
+                    }
+                    .tracking-card {
+                        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+                        border-radius: 8px;
+                        background-color: white;
+                    }
+                </style>
+            </head>
+            <body>
+                <div class="container mt-4">
+                    <div class="card tracking-card">
+                        <div class="card-body">
+                            <h3 class="card-title mb-4">Tracking Information - Order <t t-esc="order_name"/></h3>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <strong>Customer Name:</strong>
+                                        <p class="mb-0" t-esc="partner_name"/>
+                                    </div>
+                                    <div class="mb-3">
+                                        <strong>Invoice Number:</strong>
+                                        <p class="mb-0" t-esc="invoice_number"/>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <strong>Delivery Status:</strong>
+                                        <p class="mb-0">
+                                            <span t-attf-class="badge {{ delivery_status == 'Pending' and 'bg-warning' or 'bg-success' }}" t-esc="delivery_status"/>
+                                        </p>
+                                    </div>
+                                    <div class="mb-3" t-if="invoice_date">
+                                        <strong>Invoice Date:</strong>
+                                        <p class="mb-0" t-esc="invoice_date" t-options='{"widget": "date"}'/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+            </body>
+        </html>
+    </template>
+</odoo>
