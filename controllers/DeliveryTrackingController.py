@@ -37,7 +37,7 @@ class DeliveryTrackingController(http.Controller):
                 'invoice_date': invoice.invoice_date if invoice else None,
             }
                 
-            return request.render('delivery_api2-main.delivery_tracking_template', values)
+            return request.render('delivery_api.delivery_tracking_template', values)
             
         except Exception as e:
             return f"""
