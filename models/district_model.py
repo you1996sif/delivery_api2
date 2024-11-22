@@ -52,10 +52,19 @@ class DistrictModel(models.Model):
         if zero_districts:
             _logger.info(f"Found {len(zero_districts)} districts with ID 0")
             try:
+                # First update related contacts to remove district reference
+                related_partners = self.env['res.partner'].search([('district_id', 'in', zero_districts.ids)])
+                if related_partners:
+                    _logger.info(f"Updating {len(related_partners)} related contacts")
+                    related_partners.write({'district_id': False})
+                
+                # Now delete the districts
                 zero_districts.unlink()
                 _logger.info("Successfully deleted districts with ID 0")
+                
             except Exception as e:
-                _logger.error(f"Error deleting districts: {str(e)}")
+                _logger.error(f"Error in deletion process: {str(e)}")
+                raise
         else:
             _logger.info("No districts found with ID 0")
         
