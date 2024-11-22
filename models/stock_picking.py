@@ -165,7 +165,7 @@ class StockPicking(models.Model):
                 self.message_post(body="Shipment data sent successfully.")
                 return True
             else:
-                _logger.info('error body = : %s', body_response)
+                # _logger.info('error body = : %s', body_response)
                 error_msg = "Failed to send shipment data, shipment data error, please check the contact information(phone, street, state)  response.status_code: {}   ".format(response.status_code)
                 raise exceptions.UserError(error_msg)
                
