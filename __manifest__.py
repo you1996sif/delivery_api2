@@ -6,7 +6,7 @@
   'summary': 'API for Primte Company to Update Order Status',
   'depends': ['sale', 'stock','website'],  
   'data': [
-      'data/cron.xml',
+      'data/cron_fetch_states_districts.xml',
       'security/ir.model.access.csv',
       'views/views.xml',
       'views/state_view.xml', 
