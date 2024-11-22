@@ -44,3 +44,19 @@ class DistrictModel(models.Model):
             except Exception as e:
                 _logger.error(f"Error fetching districts for {state.key}: {str(e)}")
         return True
+    
+    def unlink_zero_districts(self):
+        _logger.info("Starting deletion of districts with ID 0")
+        zero_districts = self.env['district.model'].search([('district_id', '=', 0)])
+        
+        if zero_districts:
+            _logger.info(f"Found {len(zero_districts)} districts with ID 0")
+            try:
+                zero_districts.unlink()
+                _logger.info("Successfully deleted districts with ID 0")
+            except Exception as e:
+                _logger.error(f"Error deleting districts: {str(e)}")
+        else:
+            _logger.info("No districts found with ID 0")
+        
+        return True
